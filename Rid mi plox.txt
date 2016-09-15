@@ -1,0 +1,4 @@
+La idea de estas dos carpetas son bastante obvias, en una guardamos todo lo relacionado con matlab(scripts, funciones,
+la mierda que sea necesaria) y en la otra, esa que dice latex, adivinen, todo lo que sea para hacer el informe en latex.
+
+atte. Diego
