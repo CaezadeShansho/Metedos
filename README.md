@@ -1,2 +1,2 @@
-# Metedos
+# Métodos
 tarea de métodos
