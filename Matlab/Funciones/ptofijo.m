@@ -7,6 +7,6 @@ for i=1:k
     end
     p0=pnew;
 end 
-pto=p0
+pto=pnew
 
 end
