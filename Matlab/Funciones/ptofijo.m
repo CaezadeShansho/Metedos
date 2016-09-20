@@ -3,6 +3,7 @@ for i=1:k
     pnew=f(p0);
     if error(pnew,p0)>tol
         pnew;
+        k=i;
         break
     end
     p0=pnew;
