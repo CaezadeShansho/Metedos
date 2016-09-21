@@ -1,13 +1,11 @@
-function sc=secante(f,x0,er)
-   df=diff(f);
-   x1=x0-f(x0)/df(x0);
-   xn=x1;
-   while f(xn)>er
-       x1=(x0*f(xn)-xn*f(x0))/(f(xn)-f(x0));
-       xn=x1;
-       x0=x1;
-   end 
-   sc=xn;
-
+function r=fposicion(fnc,x0,x1,e)
+	while true
+		xnew=(x0*fnc(x1)-x1*nc(x0))/(fnc(x1)-fnc(x0))
+		if abs(xnew-x1) < e
+			r=xnew
+			return
+		end
+		x0=x1
+		x1=xnew
+	end
 end
-
