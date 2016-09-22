@@ -10,7 +10,7 @@ function FalsaPosicion(func,x0,x1,tol)
             disp('lado derecho')
             x0=c
         end
-        c = ( x0 * func(x0)- x1 * func(x1) )/ ( func()-func() )
+        c = ( x0 * func(x0)- x1 * func(x1) )/ ( func(x1)-func(x0) )
     end
     
 end
