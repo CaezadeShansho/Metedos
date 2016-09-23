@@ -4,6 +4,7 @@
 \author{Thomas Muñoz , Diego Vilches , Javiera Araya , Ignacio Yanjari.}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{array}
 \graphicspath{ {images/} }
 \begin{document}
 \maketitle
@@ -16,30 +17,102 @@ de las siguientes ecuaciones no lineales en los intervalos indicados:
     
 
 \item  \(x^3 - 3sen(x) +1 = 0\) , sobre [0,2].
-
+    \begin{table}[H]
+    \centering
+        \begin{tabular} { |a|a|a|a|}
+        
+        \hline
+        Métodos       & Secante & Biseccion & Falsa Posicion  \\
+        \hline
+        Cero Obtenido &  -1,5873       &    0,3558       &      -1,5873           \\
+        \hline
+        Iteraciones   &     6        &      15     &        7         \\
+        \hline
+        
+        \end{tabular}
+    \end{table}
+    
 \item \( e^{-t/2} cos(4t) = 0 \), sobre [0,1].
+    \begin{table}[H]
+    \centering
+        \begin{tabular} { |a|a|a|a|}
+        
+        \hline
+        Métodos       & Secante & Biseccion & Falsa Posicion  \\
+        \hline
+        Cero Obtenido &  1,9635       &    0,3927       &      0,3927           \\
+        \hline
+        Iteraciones   &     3        &      12     &        4         \\
+        \hline
+        
+        \end{tabular}
+    \end{table}
 
 \item \(x + 40 -x\cosh(\frac{60}{x}) = 0 \), sobre [40,60].
+    \begin{table}[H]
+    \centering
+        \begin{tabular} { |a|a|a|a|}
+        
+        \hline
+        Métodos       & Secante & Biseccion & Falsa Posicion  \\
+        \hline
+        Cero Obtenido &  50,5399       &    50,5399       &      50,5399           \\
+        \hline
+        Iteraciones   &     5        &      15     &        9         \\
+        \hline
+        
+        \end{tabular}
+    \end{table}
 
 \item \(e^{0.5x}\cos(0.05\sqrt{200-\frac{x^2}{10}}) -1 = 0 \), sobre [0,4].
+    \begin{table}[H]
+    \centering
+        \begin{tabular} { |a|a|a|a|}
+        
+        \hline
+        Métodos       & Secante & Biseccion & Falsa Posicion  \\
+        \hline
+        Cero Obtenido &  50,5481       &    50,5481       &      50,5481           \\
+        \hline
+        Iteraciones   &     5        &      13     &        18         \\
+        \hline
+        
+        \end{tabular}
+    \end{table}
 
 \item \(f (\theta) = \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) - 0.6)^2 + sen(\theta)^2}} -  \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) + 0.6)^2 + sen(\theta)^2}} = 0, \theta \in [1,2].\)
-(sol. exacta \theta^* = \frac{\pi}{2}) \\
-\(\)con  una   tolerancia de \(10^-5\). Haga una
-comparación de los métodos en cuanto a la cantidad
-de iteraciones, el error cometido. Cuál de ellos 
-fue más eficiente?
+(sol. exacta \theta^* = \frac{\pi}{2}) 
+
+    \begin{table}[H]
+    \centering
+        \begin{tabular} { |a|a|a|a|}
+        
+        \hline
+        Métodos       & Secante & Biseccion & Falsa Posicion  \\
+        \hline
+        Cero Obtenido &  1,5708       &   1,5708       &      1,5708           \\
+        \hline
+        Iteraciones   &     3        &      10     &        2         \\
+        \hline
+        
+        \end{tabular}
+    \end{table}
+    
+\\Con una tolerancia de \(10^{-5}\). Haga una comparación de los métodos en cuanto a la cantidad de iteraciones, el error cometido. Cuál de ellos fue más eficiente?
 
 \end{enumerate}
 
-\item % PREGUNTA 2
+\item %pregunta 2
 
 \item Considere la ecuación no lineal $f(x) = -x^{3} - \cos(x) = 0$
-\begin{enumerate}
-    \item Usando el método de Newton encontrar la raı́z próxima al valor $x_{0} = -1$, con una precisión de $10^{-5}$.
-    \item Repetir el proceso con el método de Newton modificado, esto es, con la iteración $$x_{n+1} = x_{n} - \frac {f(x_{n})} {f'(x_{0})} $$
-    Que método converge más rápido?
-
+    \begin{enumerate}
+    
+        \item Usando el método de Newton encontrar la raı́z próxima al valor $x_{0} = -1$, con una precisión de $10^{-5}$.
+        
+        \item Repetir el proceso con el método de Newton modificado, esto es, con la iteración $$x_{n+1} = x_{n} - \frac {f(x_{n})} {f'(x_{0})} $$
+        Que método converge más rápido?
+    
+    \end{enumerate}
 
 \end{enumerate}
 \end{document}
