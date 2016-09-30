@@ -19,38 +19,70 @@ de las siguientes ecuaciones no lineales en los intervalos indicados:
     
 
 \item  \(x^3 - 3sen(x) +1 = 0\) , sobre [0,2].
-    \begin{table}[H]
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{GraficoEj1a}
+\end{figure}
+Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal, pero esta como muestra el gráfico tiene 2 soluciones.Para lograr analizar completamente estos 2 casos con los 3 métodos diferentes tendremos que separar en 2 intervalos nuestro intervalo anterior, en este caso lo separaremos en [0,0.8] y [0.8,2]\\
+    \begin{table}[H]Intervalo [0,0.8]:
     \centering
         \begin{tabular} { |c|c|c|c|}
-        
         \hline
         Métodos       & Secante & Biseccion & Falsa Posicion  \\
         \hline
-        Cero Obtenido &  -1,5873       &    0,3558       &      -1,5873           \\
+        Cero Obtenido &  0,3558       &    0,3558       &      0,3558    \\
         \hline
-        Iteraciones   &     6        &      15     &        7         \\
+        Iteraciones   &     5        &      13     &        5          \\
         \hline
-        
+        Error Obtenido &       0      &    0         &      0        \\
+         \hline
         \end{tabular}
     \end{table}
+
+    \begin{table}[H]Intervalo [0.8,2]:
+    \centering
+        \begin{tabular} { |c|c|c|c|}
+        \hline
+        Métodos       & Secante & Biseccion & Falsa Posicion  \\
+        \hline
+        Cero Obtenido &  1.2204       &    1.2204       &      1.2204    \\
+        \hline
+        Iteraciones   &     8       &      11     &        19          \\
+        \hline
+        Error Obtenido &     0        &     0        &      0        \\
+         \hline
+        \end{tabular}
+    \end{table}
+
     
 \item \( e^{-t/2} cos(4t) = 0 \), sobre [0,1].
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{GraficoEj1b}
+\end{figure}
     \begin{table}[H]
     \centering
         \begin{tabular} { |c|c|c|c|}
         
         \hline
-        Métodos       & Secante & Biseccion & Falsa Posicion  \\
+        Métodos       & Secante & Biseccion & Falsa Posicion \\
         \hline
         Cero Obtenido &  1,9635       &    0,3927       &      0,3927           \\
         \hline
         Iteraciones   &     3        &      12     &        4         \\
         \hline
+        Error Obtenido &     0       &       0      &      0\\
+        \hline
         
         \end{tabular}
     \end{table}
 
-\item \(x + 40 -x\cosh(\frac{60}{x}) = 0 \), sobre [40,60].
+\item \(x + 40 -x\cosh(\frac{60}{x}) = 0 \), sobre [40,60].\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{GraficoEj1c}
+\end{figure}
     \begin{table}[H]
     \centering
         \begin{tabular} { |c|c|c|c|}
@@ -58,49 +90,67 @@ de las siguientes ecuaciones no lineales en los intervalos indicados:
         \hline
         Métodos       & Secante & Biseccion & Falsa Posicion  \\
         \hline
-        Cero Obtenido &  50,5399       &    50,5399       &      50,5399           \\
+        Cero Obtenido &  50,5399       &    50,5399       &      50,5399          \\
         \hline
-        Iteraciones   &     5        &      15     &        9         \\
+        Iteraciones   &     5        &      15     &        9        \\
         \hline
+        Error Obtenido &    0       &       0       &       0   \\
+        \hline 
         
         \end{tabular}
     \end{table}
 
-\item \(e^{0.5x}\cos(0.05\sqrt{200-\frac{x^2}{10}}) -1 = 0 \), sobre [0,4].
+\item \(e^{0.5x}\cos(0.05\sqrt{200-\frac{x^2}{10}}) -1 = 0 \), sobre [0,4].\\
+    
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{GraficoEj1d}
+    \end{figure}
     \begin{table}[H]
     \centering
         \begin{tabular} { |c|c|c|c|}
         
         \hline
-        Métodos       & Secante & Biseccion & Falsa Posicion  \\
+        Métodos       & Secante & Biseccion & Falsa Posicion \\
         \hline
-        Cero Obtenido &  50,5481       &    50,5481       &      50,5481           \\
+        Cero Obtenido &  0.5481       &    0.5481       &      0.5481          \\
         \hline
-        Iteraciones   &     5        &      13     &        18         \\
+        Iteraciones   &     5        &      13     &        18       \\
+        \hline
+        Error Obtenido & 0  & 0  & 0  \\
         \hline
         
         \end{tabular}
     \end{table}
 
-\item $f (\theta) = \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) - 0.6)^2 + sen(\theta)^2}} -  \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) + 0.6)^2 + sen(\theta)^2}} = 0, \theta \in [1,2].
-(sol. exacta \theta^* = \frac{\pi}{2})$ 
+\item $ f (\theta) = \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) - 0.6)^2 + sen(\theta)^2}} -  \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) + 0.6)^2 + sen(\theta)^2}} = 0, \theta \in [1,2].$
+$(sol. exacta \theta^* = \frac{\pi}{2})$
+
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=11cm]{GraficoEj1e}
+    \end{figure}
 
     \begin{table}[H]
     \centering
         \begin{tabular} { |c|c|c|c|}
         
         \hline
-        Métodos       & Secante & Biseccion & Falsa Posicion  \\
+        Métodos       & Secante & Biseccion & Falsa Posicion \\
         \hline
-        Cero Obtenido &  1,5708       &   1,5708       &      1,5708           \\
+        Cero Obtenido &  1,5708       &   1,5708       &      1,5708        \\
         \hline
-        Iteraciones   &     3        &      10     &        2         \\
+        Iteraciones   &     3        &      10        &        2       \\
+        \hline
+        Error Obtenido  &   0        &      0      &          0  \\
         \hline
         
         \end{tabular}
     \end{table}
     
-Con una tolerancia de $10^{-5}$. Haga una comparación de los métodos en cuanto a la cantidad de iteraciones, el error cometido. Cuál de ellos fue más eficiente?
+Con una tolerancia de $ 10^{-5} $. Haga una comparación de los métodos en cuanto a la cantidad de iteraciones, el error cometido. Cuál de ellos fue más eficiente?\\
+\\
+El metodo más eficiente para lograr encontrar el valor de las funciones mencionadas es el metodo de la secante.
 
 \end{enumerate}
 
