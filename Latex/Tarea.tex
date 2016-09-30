@@ -34,7 +34,7 @@ Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal
         \hline
         Iteraciones   &     5        &      13     &        5          \\
         \hline
-        Error Obtenido &       0      &    0         &      0        \\
+        Error Obtenido &       0      &       0      &     0         \\
          \hline
         \end{tabular}
     \end{table}
@@ -49,7 +49,7 @@ Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal
         \hline
         Iteraciones   &     8       &      11     &        19          \\
         \hline
-        Error Obtenido &     0        &     0        &      0        \\
+        Error Obtenido &    0         &      0       &      0        \\
          \hline
         \end{tabular}
     \end{table}
@@ -57,10 +57,11 @@ Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal
     
 \item \( e^{-t/2} cos(4t) = 0 \), sobre [0,1].
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{GraficoEj1b}
-\end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{GraficoEj1b}
+    \end{figure}
+    
     \begin{table}[H]
     \centering
         \begin{tabular} { |c|c|c|c|}
@@ -72,11 +73,14 @@ Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal
         \hline
         Iteraciones   &     3        &      12     &        4         \\
         \hline
-        Error Obtenido &     0       &       0      &      0\\
+        Error Obtenido &     4      &     0        &    0  \\
         \hline
         
         \end{tabular}
     \end{table}
+    Como se observa en la tabla el valor obtenido por el método de la secante es muy diferente al cero 
+    obtenido por los otros 2 que son Biseccion y falsa posición,los cuales encuentran el cero contenido en el intervalo pedido.Esto se debe a la forma en la cual se desarrolla el método de secante, el cual no usa un criterio entre 2 intervalos para encontrar el cero, para obtener el cero correcto se debe definir como [0-0.8] y se encuentra el cero de 0,3927
+    
 
 \item \(x + 40 -x\cosh(\frac{60}{x}) = 0 \), sobre [40,60].\\
 \begin{figure}[H]
@@ -117,7 +121,7 @@ Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal
         \hline
         Iteraciones   &     5        &      13     &        18       \\
         \hline
-        Error Obtenido & 0  & 0  & 0  \\
+        Error Obtenido &  & 0 & 0 \\
         \hline
         
         \end{tabular}
@@ -148,9 +152,9 @@ $(sol. exacta \theta^* = \frac{\pi}{2})$
         \end{tabular}
     \end{table}
     
-Con una tolerancia de $ 10^{-5} $. Haga una comparación de los métodos en cuanto a la cantidad de iteraciones, el error cometido. Cuál de ellos fue más eficiente?\\
-\\
-El metodo más eficiente para lograr encontrar el valor de las funciones mencionadas es el metodo de la secante.
+Con una tolerancia de $ 10^{-5} $. Haga una comparación de los métodos en cuanto a la cantidad de iteraciones, el error cometido. Cuál de ellos fue más eficiente?
+
+El metodo más eficiente para lograr encontrar el valor de las funciones mencionadas es el metodo de Falsa Posicion ya que encontró el cero en todas las ecuaciones y necesitó en promedio un menor número de iteraciones en comparación con Bisección.Pero si no le damos importancia a la convergencia en el caso b) el mejor y más rapido sería el método de secante.
 
 \end{enumerate}
 
