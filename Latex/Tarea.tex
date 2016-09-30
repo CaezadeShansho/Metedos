@@ -105,10 +105,12 @@ Con una tolerancia de $10^{-5}$. Haga una comparación de los métodos en cuanto
 \end{enumerate}
 
 %pregunta 2
+%pendiente: poner gráfica
 \item Considere la ecuación no lineal $f(x)= \frac{1}{2}+\frac{1}{4}x^2-xsen(x)-\frac{1}{2}cos(2x)=0$
 	\begin{enumerate}
 	\item  Usando el método de Newton con punto inicial $x_{0}=\frac{\pi}{2}$ encuentre la solución aproximada de $f$. Para ello REalize las iteraciones necesarias hasta que se cumpla el criterio de parada %$\abs{x_{n+1}-x_{n}} \l 10^{-6} $
 %pendiente: valor absoluto
+
 		\begin{table} [H]
 			\centering
 			\begin{tabular}{|c|c|c|}
@@ -129,8 +131,28 @@ Con una tolerancia de $10^{-5}$. Haga una comparación de los métodos en cuanto
 				\hline
 				$5\pi$ & 1,8955 & 22 \\
 				\hline 
+				$10\pi$ & 0 & 66\\
+				\hline
 			\end{tabular}
 		\end{table}
+		
+La sucesión, en el caso de $x_{0}=5\pi$, converge al mismo cero que en el ejercicio anterior. Por otra parte, cuando $x_{0}=10\pi$, esta converge a 0.
+
+	\item Use el método de la secante para encontrar la solución aproximada tomando como puntos iniciales $x_{0}=\frac{\pi}{2}$ y $x_{0}=5\pi$, como criterio de parada el mismo descrito en (a).
+	\begin{table} [H]
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				$x_{0}$& $x_{1}$ & Cero Obtenido & Iteraciones\\
+				\hline
+				$\frac{\pi}{2}$ & 1,7854 & 1,8955 & 24 \\
+				\hline 
+				$5\pi$& 13,0900 & 0 & 31\\
+				\hline
+			\end{tabular}
+		\end{table}
+		
+Se puede apreciar que si $x_{0}=5\pi$, al ocupar el método de la secantem se obtiene un cero distinto a cuando se ocupa el método de Newton.	
 	\end{enumerate}
 		
 
@@ -231,7 +253,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
         11 &  NaN        \\
          \hline
         12 &  NaN        \\
-        
+        \hline
         
         \end{tabular}
     \end{table}
@@ -269,6 +291,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
         11 &  -0.2871       \\
          \hline
         12 &  -0.2739        \\
+        \hline
         \end{tabular}
 \end{table}
 
@@ -311,7 +334,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
         11 &    0.1303 - 0.0151i   \\
          \hline
         12 &  0.1351 - 0.0163i        \\
-        
+        \hline
         
         \end{tabular}
         
@@ -351,7 +374,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
         11 &    0.0007 + 0.0659i \\
          \hline
         12 &   0.0004 - 0.0659i       \\
-        
+        \hline
         
         \end{tabular}
         
@@ -398,7 +421,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
         11 &   3.8803e-04  \\
          \hline
         12 &   1.9407e-04      \\
-        
+        \hline
         
         \end{tabular}
         
@@ -438,7 +461,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
         11 &   0.0019  \\
          \hline
         12 &   9.3724e-04     \\
-        
+        \hline
         
         \end{tabular}
         
@@ -483,7 +506,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
         11 & 8.4146e-11   \\
          \hline
         12 &  8.4146e-11      \\
-        
+        \hline
         
         \end{tabular}
         
@@ -522,7 +545,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
         11 & 1.0509e-09   \\
          \hline
         12 &  1.0509e-09     \\
-        
+        \hline
         
         \end{tabular}
         
@@ -567,7 +590,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
         11 &    1.2916e-10 \\
          \hline
         12 &   1.2916e-10  \\
-        
+        \hline
         
         \end{tabular}
         
@@ -606,7 +629,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
         11 &    -2.6231e-11 \\
          \hline
         12 &    -2.6231e-11  \\
-        
+        \hline
         
         \end{tabular}
         
