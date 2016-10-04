@@ -694,6 +694,80 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
 
 \item De la función g1(x), cuando se toma el punto inicial x0=0.5, la iteración por punto fijo diverge, pues, cada vez que se hacen más iteraciones, el punto fijo tendera a infinito. 
 \end{itemize}
+
+\end{enumerate}
+\item Según los metodos descritos(Nweton, Schroder y Whittaker) para encontrar la raíz aproximada de $f(x)=0$:
+	\begin{enumerate}
+	
+		\item Utilize los métodos para encontrar la solución de la ecuación no lineal $f(x)=0$, donde
+		
+		(i) $f_{1}(x)=xe^{x^2}-sen(x)+3cos(x)+5$.
+		
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				Métodos & $x_{0}$ & Iteraciones & Cero Obtenido \\
+				\hline
+				Newton & -1 & 6 & -1.2892 \\
+				\hline
+				Schroder & -1 & 6 & -1.2892 \\
+				\hline
+				Whittaker & -1 & 10 & -1.2892 \\
+				\hline				
+			\end{tabular}
+			\end{table}	
+		
+		
+		
+		(ii) $f_{2}(x)=x^3-3x^2(2^{-x})+3x(4^{-x})-8^{-x}$, en [0,1].
+		
+			\begin{table}[H]
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				Métodos & $x_{0}$ & Iteraciones & Cero Obtenido \\
+				\hline
+				Newton & 1 & 43 & 0.6412 \\
+				\hline
+				Schroder & 1 & 4 & 0.6412\\
+				\hline
+				Whittaker & 1 & 66 & 0.6412\\
+				\hline				
+			\end{tabular}
+			\end{table}	
+			
+		(iii) $f_{3}(x)=cos(x+\sqrt[2]{2})+x(\frac{x}{2}+2)$, en [-2,1].	
+		
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				Métodos & $x_{0}$ & Iteraciones & Cero Obtenido \\
+				\hline
+				Newton & -1 & 5 & -0.1646 \\
+				\hline
+				Schroder & -1 & 5 & -0.1646\\
+				\hline
+				Whittaker & -1 & 6 & -0.1646 \\
+				\hline				
+			\end{tabular}
+		\end{table}		
+			
+		\item Compare los errores relativos vs. las iteraciones (mediante un gráfico) para los métodos (descritos
+			anteriormente) que determinan la raíz de $f_{i}(x)=0$, para $i$ = 1,2,3.	
+			\begin{itemize}
+				\item Método de Newton:
+				\begin{figure}
+					\centering
+					\includegraphics[width=6cm]{NewtonEj6} %hay que posicionar bien los gráficos
+				\end{figure}								 
+				 
+				 
+			\end{itemize}				
+		
+	
+	
 \end{enumerate}
 <<<<<<< HEAD
 

@@ -9,6 +9,7 @@ function wf=whittaker(fnc,x0,er)
     ab=double(abs(xn-x0)/abs(xn));
     c=1;
     while ab>er
+        x0=xn
     	f=double(subs(fnc,x0));
     	df=double(subs(dfnc,x0));
     	ddf=double(subs(ddfnc,x0));
