@@ -2,6 +2,8 @@
 \headertext{Metodos Numéricos}
 \title{Metodos Numéricos : Tarea 1}
 \author{Thomas Muñoz , Diego Vilches , Javiera Araya , Ignacio Yanjari.}
+\usepackage{amssymb}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{array}
@@ -9,7 +11,7 @@
 
 \begin{document}
 \maketitle
-
+\section{Resolución de sistemas de ecuaciones no lineales:}
 \begin{enumerate}
 
 \item Usando los métodos de bisección, falsa posición, y secante, encuentre la raíz aproximada 
@@ -758,17 +760,17 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
 			anteriormente) que determinan la raíz de $f_{i}(x)=0$, para $i$ = 1,2,3.	
 			\begin{itemize}
 				\item Método de Newton:
-				\begin{figure}
+				\begin{figure}[H]
 					\centering
 					\includegraphics[width=6cm]{NewtonEj6} %hay que posicionar bien los gráficos
-				\end{figure}								 
-				 
-				 
+				\end{figure}	
 			\end{itemize}				
 		
 	
 	
 \end{enumerate}
+\end{enumerate}
+\newpage
 \section{Resolución de sistemas de ecuaciones no lineales:}
     
         
@@ -823,6 +825,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
             
             Como ya obtuvimos la primera solución buscaremos la segunda, la cual se encuentra en el 3er cuadrante, para el cual igual usaremos un punto cercano a lo que se muestra en la gráfica como interseccion de las funciones.Por lo tanto ocuparemos el $x0=[-2;-1.8] $ obteniendo como el resultado el vector:
             $x*=[-2.4022;-1.6030]$ siendo el punto $x=-2.4022$, $y=-1.6030$
+
         \newpage    
         Pregunta $ 1b)$
         
@@ -842,8 +845,10 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
         
         Luego calcularemos la solución que en el gráfco se encuentra en el 2do cuadrante utilizando el punto inicial $0=[-1.8;0]$
         obteniendo como solución el vector $x*=[-1.6663;0.3612]$ el punto  $x=-1.6663$, $y=0.3612$
-        
+
+    
         \newpage
+        
         \item En un sistema de tuberías (ver figura), los caudales de un cierto fluido en cada rama y las presiones en cada nodo de la red se relacionan mediante el siguiente sistema
         
         \begin{align*} 
@@ -896,10 +901,6 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
     Al igual que el ejercicio 1b) de éste item para lograr el objetivo de encontrar una raiz se limita a una cantidad de iteraciones iguales a 3, logrando así valores cercanos a la solución de la ecuación
     
     Para realizar este item se utilizo el código de NewtonVariables.m
+    \end{enumerate}
     
-<<<<<<< HEAD
-
-=======
-\end{enumerate}
->>>>>>> 3d7d430da91f5b054d997324bbd5b2ed5236e973
 \end{document}
