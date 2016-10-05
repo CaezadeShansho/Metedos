@@ -769,6 +769,134 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
 	
 	
 \end{enumerate}
+\section{Resolución de sistemas de ecuaciones no lineales:}
+    
+        
+        En los siguientes ejercicios, use como criterio de parada lo siguiente:
+        \begin{center}
+            $ \frac{|| x^{n+1} - x^{n} ||}{|| x^{n+1} ||} \leq 10^{-6} $  
+        \end{center}
+
+        Donde $||z||=\sqrt{z_{1}^{2} + z_{2}^2+...+z_{n}^{2}} , z \in \mathbb{R}^{n}$
+    \begin{enumerate}   
+        
+        \item Considere los siguientes sistemas de ecuaciones no lineales\\
+        
+        \begin{math}
+            (a)\left\lbrace
+          \begin{array}{ll}
+                x^2 + xy^2-x-2&=0 \\\
+                y^2 + xy^2-y+2&=0
+            \end{array}
+            \right.
+            \hspace{3cm}
+            (b) \left\lbrace
+           \begin{array}{ll}
+                 x^2+x-y^2&=1  \\
+                 y-sen(x^2)&=0 
+            \end{array}
+            \right.
+        \end{math}\\
+        
+        Usando el método de Newton, encuentre sus soluciones aproximadas. Para encontrar los puntos iniciales, apóyese en los gráficos que le permiten encontrar una aproximación de la solución 
+        
+        
+        Pregunta $ 1a) $\\
+        
+            
+            $ Recta(1) : x^2+xy^2-x-2=0 $
+            
+            $ Recta(2) : y^2 +xy^2-y+2=0 $
+            
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=15cm]{GraficoEcEj1a}
+            \end{figure}
+            
+            Como se observa en el grafico las rectas (1) y (2) se intersectan 2 veces, mientras que su comportamiento luego tiende a alejarse una de la otra analizaremos las 2 soluciones que existen dentro de este intervalo de gráfica mostrado anteriormente.Posteriormente realizando un zoom en donde se encuentran las intersecciones se obtiene lo siguiente.\\
+            
+            \begin{figure}[H]
+               \centering   \includegraphics[width=13cm]{GraficoEcEj1azoom}
+            \end{figure}
+            Ahora para lograr obtener nuesta solucion que se encuentra en el 2do cuadrante  ocuparemos un punto cercano a la interseccion, En este caso ocuparemos $ x0=[-2;1] $ y el resulado obtenido como primera solución de la ecuación es :
+            $ x*=[-1.6088;1.1686 ]$ siendo el punto  $x = -1.6088$,$y = 1.1686$
+            
+            Como ya obtuvimos la primera solución buscaremos la segunda, la cual se encuentra en el 3er cuadrante, para el cual igual usaremos un punto cercano a lo que se muestra en la gráfica como interseccion de las funciones.Por lo tanto ocuparemos el $x0=[-2;-1.8] $ obteniendo como el resultado el vector:
+            $x*=[-2.4022;-1.6030]$ siendo el punto $x=-2.4022$, $y=-1.6030$
+        \newpage    
+        Pregunta $ 1b)$
+        
+            $ Recta(1) : x^2 + x -y^2=1 $
+            
+            $ Recta(2) : y-sen(x^2)=0  $
+            
+            \begin{figure}[h] \centering
+            \includegraphics[width=12cm]{GraficoEcEj1b}
+            \end{figure}
+        Como se observa en la figura existen 2 soluciones del sistema no lineal, gracias a la gráfica dibujada dividiremos el problema en 2 casos, ocuparemos puntos cercanos a la intersección de las curvas dibujadas y asumiremos gracias a esta que no se intersectan en otro punto ya que  $ x \in (-inf,-2) \cup (1,inf+)$ las imagenes de las funciones se alejan.
+        
+        Con el error pedido en el inicio de este item el programa no logra terminar. debido a que el error es la condición de salida y que la diferencia  obtenida de una iteración con la otra nunca llega a ser tan pequeña como el intervalo a esperar. Para solucionar esto se redefine nuestra condición de salida por otra, en este caso se ocupo una cantidad de iteraciones igual a 5-6.
+        
+        Primero encontraremos la solución que se observa en el 1er cuadrante ,en este caso ocuparemos el punto inicial $x0 = [0.5;0.5]$ Obteniendo como solución el vector
+        $ x*=[0.7272;0.5028] $ el punto $ x = 0.7272 $ , $ y = 0.5028$.
+        
+        Luego calcularemos la solución que en el gráfco se encuentra en el 2do cuadrante utilizando el punto inicial $0=[-1.8;0]$
+        obteniendo como solución el vector $x*=[-1.6663;0.3612]$ el punto  $x=-1.6663$, $y=0.3612$
+        
+        \newpage
+        \item En un sistema de tuberías (ver figura), los caudales de un cierto fluido en cada rama y las presiones en cada nodo de la red se relacionan mediante el siguiente sistema
+        
+        \begin{align*} 
+            p1 - p2 &= KQ^{1,75} \\ 
+            p2 - p4 &= K_1 Q_1^{1,75}\\
+            p2 - p3 &= K_2 Q_2^{1,75}
+        \end{align*}
+        
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=7cm]{imagenEjec}
+    \end{figure}        
+    
+    Para un determinado fluido se sabe que
+    \begin{align*}
+    p_1&=75psi & p_3&=20psi &  p_4&=15psi & K&=2,35e^{-3} & K_1&=4,67e^{-3} & K_2&=3,72e^{-2}
+    \end{align*}
+    
+    Usando el método de Newton en varias variables, determine los caudales en todas las ramas, y la presión en el nodo 2 suponiendo que $Q = Q_1 + Q_2 $. Use como valores iniciales: $ p_2^0= 50 psi,$  $Q_2^0=7$ y  $Q_1^0=16$
+    
+    
+    Reescribiendo las ecuaciones con valores dados:
+    
+    \begin{align*} 
+        75 - p2 &=  2.35e^{-3}(Q_1+Q_2)^{1.75} \\ 
+        p2 - 15 &= 4.67e^{-3}Q_1^{1.75} \\
+        p2 - 20 &= 4.72e^{-2}Q_2^{1.75}
+    \end{align*}
+    
+    Escribimos vector de funciones de la forma $f(x) = 0$
+
+   $$\begin{pmatrix}
+        75 - p2 - 2.35e^{-3}(Q_1+Q_2)^{1.75} &= 0 \\
+        \\
+        p2 - 15 - 4.67e^{-3}Q_1^{1.75} &= 0  \\
+        \\
+        p2 - 20 - 4.72e^{-2}Q_2^{1.75} &= 0
+    \end{pmatrix}$$
+    
+    Utilizando los valores iniciales Se llega al resultado de : 
+    $$\begin{pmatrix}
+        p_2 &=44.5717 \hspace{0.1cm} psi \\
+        \\
+        Q_1 &=15.9418 \\
+        \\
+        Q_2 &=8.0495
+    \end{pmatrix}$$
+    Por lo tanto como $Q = Q_1 + Q_2 $ implica que $ Q = 23.9913 $
+    
+    Al igual que el ejercicio 1b) de éste item para lograr el objetivo de encontrar una raiz se limita a una cantidad de iteraciones iguales a 3, logrando así valores cercanos a la solución de la ecuación
+    
+    Para realizar este item se utilizo el código de NewtonVariables.m
+    
 <<<<<<< HEAD
 
 =======
