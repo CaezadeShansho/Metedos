@@ -162,7 +162,7 @@ El metodo más eficiente para lograr encontrar el valor de las funciones mencion
 %pendiente: poner gráfica
 \item Considere la ecuación no lineal $f(x)= \frac{1}{2}+\frac{1}{4}x^2-xsen(x)-\frac{1}{2}cos(2x)=0$
 	\begin{enumerate}
-	\item  Usando el método de Newton con punto inicial $x_{0}=\frac{\pi}{2}$ encuentre la solución aproximada de $f$. Para ello REalize las iteraciones necesarias hasta que se cumpla el criterio de parada %$\abs{x_{n+1}-x_{n}} \l 10^{-6} $
+	\item  Usando el método de Newton con punto inicial $x_{0}=\frac{\pi}{2}$ encuentre la solución aproximada de $f$. Para ello REalize las iteraciones necesarias hasta que se cumpla el criterio de parada $|x_{n+1}-x_{n}| < 10^{-6} $
 %pendiente: valor absoluto
 
 		\begin{table} [H]
@@ -696,7 +696,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
 \end{itemize}
 
 \end{enumerate}
-\item Según los metodos descritos(Nweton, Schroder y Whittaker) para encontrar la raíz aproximada de $f(x)=0$:
+\item Según los metodos descritos(Nweton, Schröder y Whittaker) para encontrar la raíz aproximada de $f(x)=0$:
 	\begin{enumerate}
 	
 		\item Utilize los métodos para encontrar la solución de la ecuación no lineal $f(x)=0$, donde
@@ -758,12 +758,24 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
 			anteriormente) que determinan la raíz de $f_{i}(x)=0$, para $i$ = 1,2,3.	
 			\begin{itemize}
 				\item Método de Newton:
-				\begin{figure}
+				\begin{figure}[H]
 					\centering
-					\includegraphics[width=6cm]{NewtonEj6} %hay que posicionar bien los gráficos
+					\includegraphics[width=10cm]{NewtonEj6} 
 				\end{figure}								 
+				
+				
+				\item Métdo de Schröder: 
+				 \begin{figure}[H]
+					\centering
+					\includegraphics[width=10cm]{SchroderEj6} 
+				\end{figure}	
 				 
 				 
+				 \item Método de Whittaker;
+				 \begin{figure}[H]
+					\centering
+					\includegraphics[width=10cm]{WhittakerEj6} 
+				\end{figure}	
 			\end{itemize}				
 		
 	
