@@ -13,17 +13,23 @@
 \maketitle
 \section{Resolución de sistemas de ecuaciones no lineales:}
 \begin{enumerate}
-
 \item Usando los métodos de bisección, falsa posición, y secante, encuentre la raíz aproximada 
 de las siguientes ecuaciones no lineales en los intervalos indicados:
 
 \begin{enumerate}
     
+Para realizar estas ecuaciones se utilizaron los programas de :
+\begin{itemize}
+    \item Biseccion.m
+    \item Secante.m
+    \item FalsaPosicion.m
+\end{itemize}
+y las comparaciones de error se hicieron en base a el resultado de la función fzero de matlab
 
 \item  \(x^3 - 3sen(x) +1 = 0\) , sobre [0,2].
 \begin{figure}[H]
     \centering
-    \includegraphics[width=10cm]{GraficoEj1a}
+    \includegraphics[width=9cm]{GraficoEj1a}
 \end{figure}
 Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal, pero esta como muestra el gráfico tiene 2 soluciones.Para lograr analizar completamente estos 2 casos con los 3 métodos diferentes tendremos que separar en 2 intervalos nuestro intervalo anterior, en este caso lo separaremos en [0,0.8] y [0.8,2]\\
     \begin{table}[H]Intervalo [0,0.8]:
@@ -36,7 +42,7 @@ Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal
         \hline
         Iteraciones   &     5        &      13     &        5          \\
         \hline
-        Error Obtenido &       0     &       0      &     0         \\
+        Error Obtenido &       0      &       0      &     0         \\
          \hline
         \end{tabular}
     \end{table}
@@ -44,9 +50,9 @@ Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal
     \begin{table}[H]Intervalo [0.8,2]:
     \centering
         \begin{tabular} { |c|c|c|c|}
-        \hline
-        Métodos       & Secante & Biseccion & Falsa Posicion  \\
-        \hline
+            \hline
+            Métodos       & Secante & Biseccion & Falsa Posicion  \\
+            \hline
         Cero Obtenido &  1.2204       &    1.2204       &      1.2204    \\
         \hline
         Iteraciones   &     8       &      11     &        19          \\
@@ -61,7 +67,7 @@ Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=10cm]{GraficoEj1b}
+        \includegraphics[width=8cm]{GraficoEj1b}
     \end{figure}
     
     \begin{table}[H]
@@ -81,7 +87,10 @@ Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal
         \end{tabular}
     \end{table}
     Como se observa en la tabla el valor obtenido por el método de la secante es muy diferente al cero 
-    obtenido por los otros 2 que son Biseccion y falsa posición,los cuales encuentran el cero contenido en el intervalo pedido.Esto se debe a la forma en la cual se desarrolla el método de secante, el cual no usa un criterio entre 2 intervalos para encontrar el cero, para obtener el cero correcto se debe definir como [0-0.8] y se encuentra el cero de 0,3927
+    obtenido por los otros 2 que son Biseccion y falsa posición,los cuales encuentran el cero contenido en el intervalo pedido.Esto se debe a la forma en la cual se desarrolla el método de secante, el cual no usa un criterio entre 2 intervalos para encontrar el cero, para obtener el cero correcto se debe definir como [0-0.8] y se encuentra el cero de 0,3927    
+    
+\newpage
+    
     
 
 \item \(x + 40 -x\cosh(\frac{60}{x}) = 0 \), sobre [40,60].\\
@@ -105,6 +114,7 @@ Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal
         
         \end{tabular}
     \end{table}
+\newpage
 
 \item \(e^{0.5x}\cos(0.05\sqrt{200-\frac{x^2}{10}}) -1 = 0 \), sobre [0,4].\\
     
@@ -123,12 +133,12 @@ Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal
         \hline
         Iteraciones   &     5        &      13     &        18       \\
         \hline
-        Error Obtenido &  & 0 & 0 \\
+        Error Obtenido   &  0 & 0 & 0 \\
         \hline
         
         \end{tabular}
     \end{table}
-
+\newpage
 \item $ f (\theta) = \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) - 0.6)^2 + sen(\theta)^2}} -  \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) + 0.6)^2 + sen(\theta)^2}} = 0, \theta \in [1,2].$
 $(sol. exacta \theta^* = \frac{\pi}{2})$
 
@@ -159,6 +169,13 @@ Con una tolerancia de $ 10^{-5} $. Haga una comparación de los métodos en cuan
 El metodo más eficiente para lograr encontrar el valor de las funciones mencionadas es el metodo de Falsa Posicion ya que encontró el cero en todas las ecuaciones y necesitó en promedio un menor número de iteraciones en comparación con Bisección.Pero si no le damos importancia a la convergencia en el caso b) el mejor y más rapido sería el método de secante.
 
 \end{enumerate}
+\newpage
+\item %pregunta 2
+\newpage
+%pendiente: poner gráfica
+\item Considere la ecuación no lineal $f(x)= \frac{1}{2}+\frac{1}{4}x^2-xsen(x)-\frac{1}{2}cos(2x)=0$
+	\begin{enumerate}
+	\item  Usando el método de Newton con punto inicial $x_{0}=\frac{\pi}{2}$ encuentre la solución aproximada de $f$. Para ello REalize las iteraciones necesarias hasta que se cumpla el criterio de parada %$\abs{x_{n+1}-x_{n}} \l 10^{-6} $
 
 %pregunta 2
 %pendiente: poner gráfica
@@ -245,7 +262,8 @@ Se puede apreciar que si $x_{0}=5\pi$, al ocupar el método de la secantem se ob
         ¿Qué método converge más rápido?
         El método de Newton usual converge más rápido, ya que solo tomó 4 iteraciones %debo graficar y argumentar.
     \end{enumerate}
-
+\end{enumerate}
+\newpage
 \item El dinero necesario para pagar la cuota correspondiente a un crédito hipotecario a interés fijo se suele
 estimar mediante la denominada “ecuación de la anualidad ordinaria”:
 \begin{center}
@@ -315,6 +333,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
     \end{table}
  
  \begin{itemize}
+ \newpage
 \item x0=-0.5
 \end{itemize}
 \begin{table}[H]
@@ -527,7 +546,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
  g4(x) = x-2\frac{f(x)}
 {f'(x)}
 \end{equation}
-\\
+\newpage
  \begin{itemize}
 \item x0=0.5
 \end{itemize}
@@ -613,9 +632,9 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
 \end{equation}
 \\
  \begin{itemize}
+ \newpage
 \item x0=0.5
 \end{itemize}
-
 \begin{table}[H]
     \centering
         \begin{tabular} { |c|c|}
@@ -654,11 +673,9 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
      \begin{itemize}
 \item x0=0.5
 \end{itemize}
-
 \begin{table}[H]
     \centering
         \begin{tabular} { |c|c|}
-        
         \hline
         iteración  &  Punto\\
         \hline
@@ -686,9 +703,7 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
          \hline
         12 &    -2.6231e-11  \\
         \hline
-        
         \end{tabular}
-        
     \end{table}
 \vspace{3cm}
 \item Que puede decir sobre el comportamiento de las iteraciones de punto fijo calculadas anteriormente.
@@ -698,7 +713,25 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
 \end{itemize}
 
 \end{enumerate}
-\item Según los metodos descritos(Nweton, Schroder y Whittaker) para encontrar la raíz aproximada de $f(x)=0$:
+\newpage
+\item Métodos iterativos :A continuación se describen algunos métodos de iteración de punto fijo que encuentran la raíz aproximada de f(x) = 0
+\begin{itemize}
+        \item Método de Newton     
+            \begin{equation*}
+                 x_{n+1}=N_f(x_n)=x_n -  \frac{f(x_n)}{f^{'}(x_n)}
+            \end{equation*}
+        
+        \item Método de Schröder
+            \begin{equation*}
+                x_{n+1}=S_f(x_n)=x_n-\frac{f(x_n)f^{'}(x_n)}{f^{'}(x_n)^{2}-f(x_n)f^{''}(x_n)}
+            \end{equation*}
+        
+        \item Método de aceleración convexa de Whittaker
+            \begin{equation*}
+                x_{n+1}=W_f(x_n)=x_n - \frac{f(x_n)}{2f^{'}(x_n)}(2 - L_f(x_n))
+            \end{equation*}
+        
+\end{itemize}
 	\begin{enumerate}
 	
 		\item Utilize los métodos para encontrar la solución de la ecuación no lineal $f(x)=0$, donde
@@ -762,13 +795,10 @@ Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el i
 				\item Método de Newton:
 				\begin{figure}[H]
 					\centering
-					\includegraphics[width=6cm]{NewtonEj6} %hay que posicionar bien los gráficos
+					\includegraphics[width=13cm]{NewtonEj6} %hay que posicionar bien los gráficos
 				\end{figure}	
-			\end{itemize}				
-		
-	
-	
-\end{enumerate}
+			\end{itemize}
+        \end{enumerate}
 \end{enumerate}
 \newpage
 \section{Resolución de sistemas de ecuaciones no lineales:}
