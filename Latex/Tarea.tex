@@ -1,5 +1,5 @@
-\documentclass{udparticle}
-\headertext{Metodos Numéricos}
+\documentclass{udpreport}
+%\headertext{Metodos Numéricos}
 \title{Metodos Numéricos : Tarea 1}
 \author{Thomas Muñoz , Diego Vilches , Javiera Araya , Ignacio Yanjari.}
 \usepackage{amssymb}
@@ -13,10 +13,10 @@
 \maketitle
 
 
-\section{Introducción}
+\chapter{Introducción}
 
 En el siguiente se informe se mostrarán y analizarán los resultados
-\section{Resolución de sistemas de ecuaciones no lineales:}
+\chapter{Resolución de sistemas de ecuaciones no lineales:}
 \begin{enumerate}
 \item Usando los métodos de bisección, falsa posición, y secante, encuentre la raíz aproximada 
 de las siguientes ecuaciones no lineales en los intervalos indicados:
@@ -838,7 +838,8 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
 			Al analizar la cantidad de iteraciones utilizadas por cada método, se puede concluír que el más eficiente es el método de Schroder.
         \end{enumerate}
 \end{enumerate}
-\section{Resolución de sistemas de ecuaciones no lineales:}
+\newpage
+\chapter{Resolución de sistemas de ecuaciones no lineales:}
     
         
         En los siguientes ejercicios, use como criterio de parada lo siguiente:
@@ -887,35 +888,34 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
             \begin{figure}[H]
                \centering   \includegraphics[width=13cm]{GraficoEcEj1azoom}
             \end{figure}
-            
             Ahora para lograr obtener nuesta solucion que se encuentra en el 2do cuadrante  ocuparemos un punto cercano a la interseccion, En este caso ocuparemos $ x0=[-2;1] $ y el resulado obtenido como primera solución de la ecuación es :
-            $ x*=[-1.60879;1.16860 ]$ siendo el punto  $x = -1.60879$,$y = 1.16860$
+            $ x*=[-1.6088;1.1686 ]$ siendo el punto  $x = -1.6088$,$y = 1.1686$
             
             Como ya obtuvimos la primera solución buscaremos la segunda, la cual se encuentra en el 3er cuadrante, para el cual igual usaremos un punto cercano a lo que se muestra en la gráfica como interseccion de las funciones.Por lo tanto ocuparemos el $x0=[-2;-1.8] $ obteniendo como el resultado el vector:
-            $x*=[-2.40216;-1.60299]$ siendo el punto $x=-2.40216$, $y=-1.60299$
+            $x*=[-2.4022;-1.6030]$ siendo el punto $x=-2.4022$, $y=-1.6030$
 
+        \newpage    
         Pregunta $ 1b)$
         
             $ Recta(1) : x^2 + x -y^2=1 $
             
             $ Recta(2) : y-sen(x^2)=0  $
             
-            \begin{figure}[H] 
-            \centering
+            \begin{figure}[h] \centering
             \includegraphics[width=12cm]{GraficoEcEj1b}
             \end{figure}
         Como se observa en la figura existen 2 soluciones del sistema no lineal, gracias a la gráfica dibujada dividiremos el problema en 2 casos, ocuparemos puntos cercanos a la intersección de las curvas dibujadas y asumiremos gracias a esta que no se intersectan en otro punto ya que  $ x \in (-inf,-2) \cup (1,inf+)$ las imagenes de las funciones se alejan.
         
-        Con el error pedido en el inicio de este item el programa no logra terminar en un tiempo razonable. debido a que el error es la condición de salida y que la diferencia  obtenida de una iteración con la otra nunca llega a ser tan pequeña como el intervalo a esperar. Para solucionar esto se redefine el margen de error a $10^-3$ 
+        Con el error pedido en el inicio de este item el programa no logra terminar. debido a que el error es la condición de salida y que la diferencia  obtenida de una iteración con la otra nunca llega a ser tan pequeña como el intervalo a esperar. Para solucionar esto se redefine nuestra condición de salida por otra, en este caso se ocupo una cantidad de iteraciones igual a 5-6.
         
         Primero encontraremos la solución que se observa en el 1er cuadrante ,en este caso ocuparemos el punto inicial $x0 = [0.5;0.5]$ Obteniendo como solución el vector
-        $ x*=[0.73994;0.47988] $ el punto $ x = 0.73994 $ , $ y = 0.47988$ con  $ error = 0.0007998437 $
+        $ x*=[0.7272;0.5028] $ el punto $ x = 0.7272 $ , $ y = 0.5028$.
         
-        Luego calcularemos la solución que en el gráfico se encuentra en el 2do cuadrante utilizando el punto inicial $x0=[-1.8;0]$
-        obteniendo como solución el vector $x*=[-1.66625;0.36118]$ el punto  $x=-1.66625$, $y=0.36118$ con $error  = 0.0002500395 $
+        Luego calcularemos la solución que en el gráfco se encuentra en el 2do cuadrante utilizando el punto inicial $0=[-1.8;0]$
+        obteniendo como solución el vector $x*=[-1.6663;0.3612]$ el punto  $x=-1.6663$, $y=0.3612$
 
     
-
+        \newpage
         
         \item En un sistema de tuberías (ver figura), los caudales de un cierto fluido en cada rama y las presiones en cada nodo de la red se relacionan mediante el siguiente sistema
         
@@ -958,18 +958,20 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
     
     Utilizando los valores iniciales Se llega al resultado de : 
     $$\begin{pmatrix}
-        p_2 &=44.59016 \hspace{0.1cm} psi \\
+        p_2 &=44.5717 \hspace{0.1cm} psi \\
         \\
-        Q_1 &=15.94760 \\
+        Q_1 &=15.9418 \\
         \\
-        Q_2 &=8.11148
+        Q_2 &=8.0495
     \end{pmatrix}$$
-    Por lo tanto como $Q = Q_1 + Q_2 $ implica que $ Q =24.05908 $
+    Por lo tanto como $Q = Q_1 + Q_2 $ implica que $ Q = 23.9913 $
     
-    Al igual que el ejercicio 1b) de éste item para lograr el objetivo de encontrar una raiz se limita a un margen de error menor al pedido, logrando así valores cercanos a la solución de la ecuación con condición de  error menor o igual a $10^-4$  logrando un error en la ultima iteración de : $ error = 0.0007513$
+    Al igual que el ejercicio 1b) de éste item para lograr el objetivo de encontrar una raiz se limita a una cantidad de iteraciones iguales a 3, logrando así valores cercanos a la solución de la ecuación
     
-    Para realizar este item se utilizo el código de NewtonVariables.
-    \section{Investigación}
+    Para realizar este item se utilizo el código de NewtonVariables.m
+    \end{enumerate}
+    \newpage
+    \chapter{Investigación}
     El método de Horner es utilizado como el paso previo para encontrar las raíces de una ecuación polinomial, es decir una función de la forma $$P(x)=a_{0}x^{n}+a_{1}x^{n-1}+...+a_{n-1}x+a_{n}$$
     Este algoritmo permite evaluar este tipo de ecuaciones con mayor rapidez que un método común, tomando $n$ multiplicaciones y $n$ sumas para evaluar un polinomio de grado n.
     %http://www.ehu.eus/~mepmufov/html/Parte2.pdf
