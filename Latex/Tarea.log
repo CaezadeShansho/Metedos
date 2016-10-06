@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.30)  5 OCT 2016 22:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.30)  6 OCT 2016 17:52
 entering extended mode
 **./Tarea.tex
 (Tarea.tex
@@ -1084,13 +1084,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 14.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<GraficoEj1a.png, id=14, 338.76563pt x 436.63126pt>
+<GraficoEj1a.png, id=18, 338.76563pt x 436.63126pt>
 File: GraficoEj1a.png Graphic file (type png)
  <use GraficoEj1a.png>
-Package pdftex.def Info: GraficoEj1a.png used on input line 32.
+Package pdftex.def Info: GraficoEj1a.png used on input line 37.
 (pdftex.def)             Requested size: 256.0748pt x 330.06433pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--48
+Underfull \hbox (badness 10000) in paragraph at lines 39--53
 
  []
 
@@ -1102,158 +1102,181 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./GraficoEj1a.png>]
-<GraficoEj1b.png, id=33, 240.14719pt x 428.35031pt>
+<GraficoEj1b.png, id=37, 240.14719pt x 428.35031pt>
 File: GraficoEj1b.png Graphic file (type png)
  <use GraficoEj1b.png>
-Package pdftex.def Info: GraficoEj1b.png used on input line 70.
+Package pdftex.def Info: GraficoEj1b.png used on input line 75.
 (pdftex.def)             Requested size: 227.62204pt x 406.01543pt.
 
-[2 <./GraficoEj1b.png>] [3] <GraficoEj1c.png, id=50, 325.215pt x 408.77719pt>
+[2 <./GraficoEj1b.png>] <GraficoEj1c.png, id=49, 325.215pt x 408.77719pt>
 File: GraficoEj1c.png Graphic file (type png)
 
 <use GraficoEj1c.png>
-Package pdftex.def Info: GraficoEj1c.png used on input line 99.
+Package pdftex.def Info: GraficoEj1c.png used on input line 102.
 (pdftex.def)             Requested size: 284.52756pt x 357.66045pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--100
+Underfull \hbox (badness 10000) in paragraph at lines 99--103
 
  []
 
-[4 <./GraficoEj1c.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+[3 <./GraficoEj1c.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 <GraficoEj1d.png, id=59, 391.4625pt x 324.46219pt>
 File: GraficoEj1d.png Graphic file (type png)
  <use GraficoEj1d.png>
-Package pdftex.def Info: GraficoEj1d.png used on input line 123.
+Package pdftex.def Info: GraficoEj1d.png used on input line 126.
 (pdftex.def)             Requested size: 284.52756pt x 235.84048pt.
 
-[5 <./GraficoEj1d.png>] <GraficoEj1e.png, id=69, 404.26031pt x 325.96782pt>
+[4 <./GraficoEj1d.png>] <GraficoEj1e.png, id=69, 404.26031pt x 325.96782pt>
 File: GraficoEj1e.png Graphic file (type png)
 
 <use GraficoEj1e.png>
-Package pdftex.def Info: GraficoEj1e.png used on input line 147.
+Package pdftex.def Info: GraficoEj1e.png used on input line 150.
 (pdftex.def)             Requested size: 312.9803pt x 252.36877pt.
- [6 <./GraficoEj1e.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 235--247
+ [5 <./GraficoEj1e.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 238--250
+
+ []
+
+[6] <1.png, id=95, 880.03781pt x 471.26062pt>
+File: 1.png Graphic file (type png)
+ <use 1.png>
+Package pdftex.def Info: 1.png used on input line 290.
+(pdftex.def)             Requested size: 341.43306pt x 182.83452pt.
+
+<3.png, id=96, 849.92531pt x 459.21562pt>
+File: 3.png Graphic file (type png)
+ <use 3.png>
+Package pdftex.def Info: 3.png used on input line 298.
+(pdftex.def)             Requested size: 341.43306pt x 184.47478pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--299
+
+ []
+
+[7 <./1.png> <./3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--315
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 396--398
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 376--378
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--465
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
 
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 632--634
+[10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 651--653
 
  []
 
-[12] [13] [14] <NewtonEj6.png, id=147, 675.27281pt x 441.90094pt>
+[12] [13] <NewtonEj6.png, id=155, 675.27281pt x 441.90094pt>
 File: NewtonEj6.png Graphic file (type png)
 
 <use NewtonEj6.png>
-Package pdftex.def Info: NewtonEj6.png used on input line 810.
+Package pdftex.def Info: NewtonEj6.png used on input line 821.
 (pdftex.def)             Requested size: 284.52756pt x 186.19724pt.
- [15] <SchroderEj6.png, id=159, 688.82344pt x 422.32782pt>
+ <SchroderEj6.png, id=156, 688.82344pt x 422.32782pt>
 File: SchroderEj6.png Graphic file (type png)
 
 <use SchroderEj6.png>
-Package pdftex.def Info: SchroderEj6.png used on input line 817.
+Package pdftex.def Info: SchroderEj6.png used on input line 827.
 (pdftex.def)             Requested size: 284.52756pt x 174.44435pt.
- <WhittakerEj6.png, id=160, 702.37407pt x 446.41782pt>
+ <WhittakerEj6.png, id=157, 702.37407pt x 446.41782pt>
 File: WhittakerEj6.png Graphic file (type png)
 
 <use WhittakerEj6.png>
-Package pdftex.def Info: WhittakerEj6.png used on input line 824.
+Package pdftex.def Info: WhittakerEj6.png used on input line 834.
 (pdftex.def)             Requested size: 284.52756pt x 180.8459pt.
- [16 <./NewtonEj6.png> <./SchroderEj6.png> <./WhittakerEj6.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 844--845
+ [14 <./NewtonEj6.png> <./SchroderEj6.png> <./WhittakerEj6.png>] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 853--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 846--861
+Underfull \hbox (badness 10000) in paragraph at lines 855--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 865--866
+Underfull \hbox (badness 10000) in paragraph at lines 874--875
 
  []
 
-<GraficoEcEj1a.png, id=168, 528.47438pt x 319.1925pt>
+<GraficoEcEj1a.png, id=170, 528.47438pt x 319.1925pt>
 File: GraficoEcEj1a.png Graphic file (type png)
  <use GraficoEcEj1a.png>
-Package pdftex.def Info: GraficoEcEj1a.png used on input line 874.
+Package pdftex.def Info: GraficoEcEj1a.png used on input line 883.
 (pdftex.def)             Requested size: 426.79134pt x 257.77496pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 877--878
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
 
  []
 
-<GraficoEcEj1azoom.png, id=169, 423.83344pt x 420.82219pt>
+<GraficoEcEj1azoom.png, id=171, 423.83344pt x 420.82219pt>
 File: GraficoEcEj1azoom.png Graphic file (type png)
 
 <use GraficoEcEj1azoom.png>
-Package pdftex.def Info: GraficoEcEj1azoom.png used on input line 880.
+Package pdftex.def Info: GraficoEcEj1azoom.png used on input line 889.
 (pdftex.def)             Requested size: 369.88582pt x 367.27458pt.
- [17 <./GraficoEcEj1a.png>] [18 <./GraficoEcEj1azoom.png>] <GraficoEcEj1b.png, 
-id=185, 422.32782pt x 378.66469pt>
+ [16 <./GraficoEcEj1a.png>] [17 <./GraficoEcEj1azoom.png>] <GraficoEcEj1b.png, 
+id=187, 422.32782pt x 378.66469pt>
 File: GraficoEcEj1b.png Graphic file (type png)
 
 <use GraficoEcEj1b.png>
-Package pdftex.def Info: GraficoEcEj1b.png used on input line 896.
+Package pdftex.def Info: GraficoEcEj1b.png used on input line 905.
 (pdftex.def)             Requested size: 341.43306pt x 306.13892pt.
- [19 <./GraficoEcEj1b.png>]
-<imagenEjec.png, id=193, 283.81032pt x 202.50656pt>
+ [18 <./GraficoEcEj1b.png>]
+<imagenEjec.png, id=194, 283.81032pt x 202.50656pt>
 File: imagenEjec.png Graphic file (type png)
  <use imagenEjec.png>
-Package pdftex.def Info: imagenEjec.png used on input line 921.
+Package pdftex.def Info: imagenEjec.png used on input line 930.
 (pdftex.def)             Requested size: 199.16928pt x 142.11823pt.
 
-[20 <./imagenEjec.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 965.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 965.
+[19 <./imagenEjec.png>] [20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 979.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 979.
  (Tarea.aux
 LaTeX Info: Redefining \. on input line 20.
 LaTeX Info: Redefining \% on input line 20.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 965.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 965.
-Package rerunfilecheck Info: File `Tarea.out' has not changed.
-(rerunfilecheck)             Checksum: 3A9111E274A88C87BEBCE60B6F7DAEFB;176.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 979.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 979.
+
+
+Package rerunfilecheck Warning: File `Tarea.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Tarea.out':
+(rerunfilecheck)             Before: 7BB2E19CEDFC08164D699B517092B4AA;228
+(rerunfilecheck)             After:  3734997B921C68C4DD6939EA95BBE045;279.
  ) 
 Here is how much of TeX's memory you used:
- 21270 strings out of 493335
- 388060 string characters out of 3139260
- 511952 words of memory out of 3000000
- 24344 multiletter control sequences out of 15000+200000
+ 21283 strings out of 493335
+ 388197 string characters out of 3139260
+ 512952 words of memory out of 3000000
+ 24353 multiletter control sequences out of 15000+200000
  11543 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,16n,73p,804b,1147s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,16n,73p,804b,1144s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
@@ -1268,9 +1291,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
-Output written on Tarea.pdf (20 pages, 398329 bytes).
+Output written on Tarea.pdf (20 pages, 424606 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 

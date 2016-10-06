@@ -1,3 +1,18 @@
+%Parametros de Entrada:
+%
+% fnc: Función a utilizar, tiene que ser syms 
+% x0: Punto inicial a utilizar
+% er: Error o tolerancia a someterse
+%
+% Variables de salida:
+% c: cantidad de iteraciones
+$ nt: Valor aproximado del cero de la función
+
+
+
+
+
+
 function sf=schroder(fnc,x0,er)
     dfnc=diff(fnc);
     ddfnc=diff(dfnc);
