@@ -15,7 +15,8 @@
 
 \chapter{Introducción}
 
-En el siguiente se informe se mostrarán y analizarán los resultados
+En el siguiente se informe se mostrarán y analizarán los resultados de los ejercicios entregados por el profesor, utilizando los métodos vistos en clases. Además, se indagará acerca del método de horner, describiendo el algoritmo, dando un par de ejemplos y mostrando su código.
+
 \chapter{Resolución de sistemas de ecuaciones no lineales:}
 \begin{enumerate}
 \item Usando los métodos de bisección, falsa posición, y secante, encuentre la raíz aproximada 
@@ -868,7 +869,7 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
             \right.
         \end{math}\\
         
-        Usando el método de Newton, encuentre sus soluciones aproximadas. Para encontrar los puntos iniciales, apóyese en los gráficos que le permiten encontrar una aproximación de la solución 
+        Usando el método de Newton, encuentre sus soluciones aproximadas. Para encontrar los puntos iniciales, apóyese en los gráficos que le permiten encontrar una aproximación de la solución. 
         
         
         Pregunta $ 1a) $\\
@@ -883,15 +884,15 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
                 \includegraphics[width=15cm]{GraficoEcEj1a}
             \end{figure}
             
-            Como se observa en el grafico las rectas (1) y (2) se intersectan 2 veces, mientras que su comportamiento luego tiende a alejarse una de la otra analizaremos las 2 soluciones que existen dentro de este intervalo de gráfica mostrado anteriormente.Posteriormente realizando un zoom en donde se encuentran las intersecciones se obtiene lo siguiente.\\
+            Como se observa en el grafico las rectas (1) y (2) se intersectan 2 veces, mientras que luego tienden a alejarse una de la otra. \\Analizaremos las 2 soluciones que existen dentro de este intervalo de gráfica mostrado anteriormente. Luego, realizando un zoom en donde se encuentran las intersecciones, se obtiene lo siguiente.\\
             
             \begin{figure}[H]
                \centering   \includegraphics[width=13cm]{GraficoEcEj1azoom}
             \end{figure}
-            Ahora para lograr obtener nuesta solucion que se encuentra en el 2do cuadrante  ocuparemos un punto cercano a la interseccion, En este caso ocuparemos $ x0=[-2;1] $ y el resulado obtenido como primera solución de la ecuación es :
+            Ahora, para lograr obtener nuesta solución que se encuentra en el 2do cuadrante, ocuparemos un punto cercano a la interseccion. En este caso ocuparemos $ x0=[-2;1] $ y el resulado obtenido como primera solución de la ecuación es:
             $ x*=[-1.6088;1.1686 ]$ siendo el punto  $x = -1.6088$,$y = 1.1686$
             
-            Como ya obtuvimos la primera solución buscaremos la segunda, la cual se encuentra en el 3er cuadrante, para el cual igual usaremos un punto cercano a lo que se muestra en la gráfica como interseccion de las funciones.Por lo tanto ocuparemos el $x0=[-2;-1.8] $ obteniendo como el resultado el vector:
+            Como ya obtuvimos la primera solución, buscaremos la segunda, la cual se encuentra en el 3er cuadrante, para el cual igualmente usaremos un punto cercano a lo que se muestra en la gráfica como interseccion de las funciones.Por lo tanto ocuparemos el $x0=[-2;-1.8] $ obteniendo como el resultado el vector:
             $x*=[-2.4022;-1.6030]$ siendo el punto $x=-2.4022$, $y=-1.6030$
 
         \newpage    
@@ -956,7 +957,7 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
         p2 - 20 - 4.72e^{-2}Q_2^{1.75} &= 0
     \end{pmatrix}$$
     
-    Utilizando los valores iniciales Se llega al resultado de : 
+    Utilizando los valores iniciales Se llega al resultado de: 
     $$\begin{pmatrix}
         p_2 &=44.5717 \hspace{0.1cm} psi \\
         \\
@@ -966,7 +967,7 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
     \end{pmatrix}$$
     Por lo tanto como $Q = Q_1 + Q_2 $ implica que $ Q = 23.9913 $
     
-    Al igual que el ejercicio 1b) de éste item para lograr el objetivo de encontrar una raiz se limita a una cantidad de iteraciones iguales a 3, logrando así valores cercanos a la solución de la ecuación
+    Al igual que el ejercicio 1b) de éste item, para lograr el objetivo de encontrar una raiz se limita a una cantidad de iteraciones iguales a 3, logrando así valores cercanos a la solución de la ecuación.
     
     Para realizar este item se utilizo el código de NewtonVariables.m
     \end{enumerate}
