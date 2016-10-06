@@ -16,218 +16,218 @@
 \item Usando los métodos de bisección, falsa posición, y secante, encuentre la raíz aproximada 
 de las siguientes ecuaciones no lineales en los intervalos indicados:
 
-\begin{enumerate}
+    \begin{enumerate}
+        
+    Para realizar estas ecuaciones se utilizaron los programas de :
+    \begin{itemize}
+        \item Biseccion.m
+        \item Secante.m
+        \item FalsaPosicion.m
+    \end{itemize}
+    y las comparaciones de error se hicieron en base a el resultado de la función fzero de matlab
     
-Para realizar estas ecuaciones se utilizaron los programas de :
-\begin{itemize}
-    \item Biseccion.m
-    \item Secante.m
-    \item FalsaPosicion.m
-\end{itemize}
-y las comparaciones de error se hicieron en base a el resultado de la función fzero de matlab
-
-\item  \(x^3 - 3sen(x) +1 = 0\) , sobre [0,2].
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=9cm]{GraficoEj1a}
-\end{figure}
-Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal, pero esta como muestra el gráfico tiene 2 soluciones.Para lograr analizar completamente estos 2 casos con los 3 métodos diferentes tendremos que separar en 2 intervalos nuestro intervalo anterior, en este caso lo separaremos en [0,0.8] y [0.8,2]\\
-    \begin{table}[H]Intervalo [0,0.8]:
-    \centering
-        \begin{tabular} { |c|c|c|c|}
-        \hline
-        Métodos       & Secante & Biseccion & Falsa Posicion  \\
-        \hline
-        Cero Obtenido &  0,3558       &    0,3558       &      0,3558    \\
-        \hline
-        Iteraciones   &     5        &      13     &        5          \\
-        \hline
-        Error Obtenido &       0      &       0      &     0         \\
-         \hline
-        \end{tabular}
-    \end{table}
-
-    \begin{table}[H]Intervalo [0.8,2]:
-    \centering
-        \begin{tabular} { |c|c|c|c|}
-            \hline
-            Métodos       & Secante & Biseccion & Falsa Posicion  \\
-            \hline
-        Cero Obtenido &  1.2204       &    1.2204       &      1.2204    \\
-        \hline
-        Iteraciones   &     8       &      11     &        19          \\
-        \hline
-        Error Obtenido &    0         &      0       &      0        \\
-         \hline
-        \end{tabular}
-    \end{table}
-
+    \item  \(x^3 - 3sen(x) +1 = 0\) , sobre [0,2].
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=9cm]{GraficoEj1a}
+        \end{figure}
+        Nuestro objetivo es obtener el 0 de la función para resolver la ecuacion lineal, pero esta como muestra el gráfico tiene 2 soluciones.Para lograr analizar completamente estos 2 casos con los 3 métodos diferentes tendremos que separar en 2 intervalos nuestro intervalo anterior, en este caso lo separaremos en [0,0.8] y [0.8,2]\\
+            \begin{table}[H]Intervalo [0,0.8]:
+            \centering
+                \begin{tabular} { |c|c|c|c|}
+                \hline
+                Métodos       & Secante & Biseccion & Falsa Posicion  \\
+                \hline
+                Cero Obtenido &  0,3558       &    0,3558       &      0,3558    \\
+                \hline
+                Iteraciones   &     5        &      13     &        5          \\
+                \hline
+                Error Obtenido &       0      &       0      &     0         \\
+                 \hline
+                \end{tabular}
+            \end{table}
+        
+            \begin{table}[H]Intervalo [0.8,2]:
+            \centering
+                \begin{tabular} { |c|c|c|c|}
+                    \hline
+                    Métodos       & Secante & Biseccion & Falsa Posicion  \\
+                    \hline
+                Cero Obtenido &  1.2204       &    1.2204       &      1.2204    \\
+                \hline
+                Iteraciones   &     8       &      11     &        19          \\
+                \hline
+                Error Obtenido &    0         &      0       &      0        \\
+                 \hline
+                \end{tabular}
+            \end{table}
     
-\item \( e^{-t/2} cos(4t) = 0 \), sobre [0,1].
-
-    \begin{figure}[H]
+        
+    \item \( e^{-t/2} cos(4t) = 0 \), sobre [0,1].
+    
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=8cm]{GraficoEj1b}
+        \end{figure}
+        
+        \begin{table}[H]
         \centering
-        \includegraphics[width=8cm]{GraficoEj1b}
-    \end{figure}
-    
-    \begin{table}[H]
-    \centering
-        \begin{tabular} { |c|c|c|c|}
+            \begin{tabular} { |c|c|c|c|}
+            
+            \hline
+            Métodos       & Secante & Biseccion & Falsa Posicion \\
+            \hline
+            Cero Obtenido &  1,9635       &    0,3927       &      0,3927           \\
+            \hline
+            Iteraciones   &     3        &      12     &        4         \\
+            \hline
+            Error Obtenido &     4      &     0        &    0  \\
+            \hline
+            
+            \end{tabular}
+        \end{table}
+        Como se observa en la tabla el valor obtenido por el método de la secante es muy diferente al cero 
+        obtenido por los otros 2 que son Biseccion y falsa posición,los cuales encuentran el cero contenido en el intervalo pedido.Esto se debe a la forma en la cual se desarrolla el método de secante, el cual no usa un criterio entre 2 intervalos para encontrar el cero, para obtener el cero correcto se debe definir como [0-0.8] y se encuentra el cero de 0,3927    
         
-        \hline
-        Métodos       & Secante & Biseccion & Falsa Posicion \\
-        \hline
-        Cero Obtenido &  1,9635       &    0,3927       &      0,3927           \\
-        \hline
-        Iteraciones   &     3        &      12     &        4         \\
-        \hline
-        Error Obtenido &     4      &     0        &    0  \\
-        \hline
+    \newpage
         
-        \end{tabular}
-    \end{table}
-    Como se observa en la tabla el valor obtenido por el método de la secante es muy diferente al cero 
-    obtenido por los otros 2 que son Biseccion y falsa posición,los cuales encuentran el cero contenido en el intervalo pedido.Esto se debe a la forma en la cual se desarrolla el método de secante, el cual no usa un criterio entre 2 intervalos para encontrar el cero, para obtener el cero correcto se debe definir como [0-0.8] y se encuentra el cero de 0,3927    
+        
     
+    \item \(x + 40 -x\cosh(\frac{60}{x}) = 0 \), sobre [40,60].\\
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=10cm]{GraficoEj1c}
+        \end{figure}
+            \begin{table}[H]
+            \centering
+                \begin{tabular} { |c|c|c|c|}
+                
+                \hline
+                Métodos       & Secante & Biseccion & Falsa Posicion  \\
+                \hline
+                Cero Obtenido &  50,5399       &    50,5399       &      50,5399          \\
+                \hline
+                Iteraciones   &     5        &      15     &        9        \\
+                \hline
+                Error Obtenido &    0       &       0       &       0   \\
+                \hline 
+                
+                \end{tabular}
+            \end{table}
+    \newpage
+    
+    \item \(e^{0.5x}\cos(0.05\sqrt{200-\frac{x^2}{10}}) -1 = 0 \), sobre [0,4].\\
+        
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{GraficoEj1d}
+        \end{figure}
+        \begin{table}[H]
+        \centering
+            \begin{tabular} { |c|c|c|c|}
+            
+            \hline
+            Métodos       & Secante & Biseccion & Falsa Posicion \\
+            \hline
+            Cero Obtenido &  0.5481       &    0.5481       &      0.5481          \\
+            \hline
+            Iteraciones   &     5        &      13     &        18       \\
+            \hline
+            Error Obtenido   &  0 & 0 & 0 \\
+            \hline
+            
+            \end{tabular}
+        \end{table}
+    \newpage
+    \item $ f (\theta) = \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) - 0.6)^2 + sen(\theta)^2}} -  \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) + 0.6)^2 + sen(\theta)^2}} = 0, \theta \in [1,2].$
+    $(sol. exacta \theta^* = \frac{\pi}{2})$
+    
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width=11cm]{GraficoEj1e}
+        \end{figure}
+    
+        \begin{table}[H]
+        \centering
+            \begin{tabular} { |c|c|c|c|}
+            
+            \hline
+            Métodos       & Secante & Biseccion & Falsa Posicion \\
+            \hline
+            Cero Obtenido &  1,5708       &   1,5708       &      1,5708        \\
+            \hline
+            Iteraciones   &     3        &      10        &        2       \\
+            \hline
+            Error Obtenido  &   0        &      0      &          0  \\
+            \hline
+            
+            \end{tabular}
+        \end{table}
+        
+    Con una tolerancia de $ 10^{-5} $. Haga una comparación de los métodos en cuanto a la cantidad de iteraciones, el error cometido. Cuál de ellos fue más eficiente?
+    
+    El metodo más eficiente para lograr encontrar el valor de las funciones mencionadas es el metodo de Falsa Posicion ya que encontró el cero en todas las ecuaciones y necesitó en promedio un menor número de iteraciones en comparación con Bisección.Pero si no le damos importancia a la convergencia en el caso b) el mejor y más rapido sería el método de secante.
+    
+    \end{enumerate}
 \newpage
-    
-    
-
-\item \(x + 40 -x\cosh(\frac{60}{x}) = 0 \), sobre [40,60].\\
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{GraficoEj1c}
-\end{figure}
-    \begin{table}[H]
-    \centering
-        \begin{tabular} { |c|c|c|c|}
-        
-        \hline
-        Métodos       & Secante & Biseccion & Falsa Posicion  \\
-        \hline
-        Cero Obtenido &  50,5399       &    50,5399       &      50,5399          \\
-        \hline
-        Iteraciones   &     5        &      15     &        9        \\
-        \hline
-        Error Obtenido &    0       &       0       &       0   \\
-        \hline 
-        
-        \end{tabular}
-    \end{table}
-\newpage
-
-\item \(e^{0.5x}\cos(0.05\sqrt{200-\frac{x^2}{10}}) -1 = 0 \), sobre [0,4].\\
-    
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{GraficoEj1d}
-    \end{figure}
-    \begin{table}[H]
-    \centering
-        \begin{tabular} { |c|c|c|c|}
-        
-        \hline
-        Métodos       & Secante & Biseccion & Falsa Posicion \\
-        \hline
-        Cero Obtenido &  0.5481       &    0.5481       &      0.5481          \\
-        \hline
-        Iteraciones   &     5        &      13     &        18       \\
-        \hline
-        Error Obtenido   &  0 & 0 & 0 \\
-        \hline
-        
-        \end{tabular}
-    \end{table}
-\newpage
-\item $ f (\theta) = \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) - 0.6)^2 + sen(\theta)^2}} -  \frac{0.6\sen{\theta}}{\sqrt{(cos(\theta) + 0.6)^2 + sen(\theta)^2}} = 0, \theta \in [1,2].$
-$(sol. exacta \theta^* = \frac{\pi}{2})$
-
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=11cm]{GraficoEj1e}
-    \end{figure}
-
-    \begin{table}[H]
-    \centering
-        \begin{tabular} { |c|c|c|c|}
-        
-        \hline
-        Métodos       & Secante & Biseccion & Falsa Posicion \\
-        \hline
-        Cero Obtenido &  1,5708       &   1,5708       &      1,5708        \\
-        \hline
-        Iteraciones   &     3        &      10        &        2       \\
-        \hline
-        Error Obtenido  &   0        &      0      &          0  \\
-        \hline
-        
-        \end{tabular}
-    \end{table}
-    
-Con una tolerancia de $ 10^{-5} $. Haga una comparación de los métodos en cuanto a la cantidad de iteraciones, el error cometido. Cuál de ellos fue más eficiente?
-
-El metodo más eficiente para lograr encontrar el valor de las funciones mencionadas es el metodo de Falsa Posicion ya que encontró el cero en todas las ecuaciones y necesitó en promedio un menor número de iteraciones en comparación con Bisección.Pero si no le damos importancia a la convergencia en el caso b) el mejor y más rapido sería el método de secante.
-
-\end{enumerate}
-\newpage
-
-
 %pendiente: poner gráfica
 \item Considere la ecuación no lineal $f(x)= \frac{1}{2}+\frac{1}{4}x^2-xsen(x)-\frac{1}{2}cos(2x)=0$
-	\begin{enumerate}
-	\item  Usando el método de Newton con punto inicial $x_{0}=\frac{\pi}{2}$ encuentre la solución aproximada de $f$. Para ello REalize las iteraciones necesarias hasta que se cumpla el criterio de parada %$\abs{x_{n+1}-x_{n}} \l 10^{-6} $
-
-\newpage
-%pregunta 2
-%pendiente: poner gráfica
-\item Considere la ecuación no lineal $f(x)= \frac{1}{2}+\frac{1}{4}x^2-xsen(x)-\frac{1}{2}cos(2x)=0$
-	\begin{enumerate}
-	\item  Usando el método de Newton con punto inicial $x_{0}=\frac{\pi}{2}$ encuentre la solución aproximada de $f$. Para ello REalize las iteraciones necesarias hasta que se cumpla el criterio de parada $|x_{n+1}-x_{n}| < 10^{-6} $
-%pendiente: valor absoluto
-
-		\begin{table} [H]
-			\centering
-			\begin{tabular}{|c|c|c|}
-				\hline
-				$x_{0}$ & Cero Obtenido & Iteraciones\\
-				\hline
-				$\frac{\pi}{2} $ & 1,8955 & 18\\
-				\hline 
-			\end{tabular}
-		\end{table}
-	
-	\item Repita el proceso tomando como valores iniciales $x_{0}=5\pi$ y $x_{0}=10\pi$ ¿La sucesión construída con estos puntos iniciales converge?
-	 	\begin{table} [H]
-			\centering
-			\begin{tabular}{|c|c|c|}
-				\hline
-				$x_{0}$ & Cero Obtenido & Iteraciones\\
-				\hline
-				$5\pi$ & 1,8955 & 22 \\
-				\hline 
-				$10\pi$ & 0 & 66\\
-				\hline
-			\end{tabular}
-		\end{table}
-		
-La sucesión, en el caso de $x_{0}=5\pi$, converge al mismo cero que en el ejercicio anterior. Por otra parte, cuando $x_{0}=10\pi$, esta converge a 0.
-
-	\item Use el método de la secante para encontrar la solución aproximada tomando como puntos iniciales $x_{0}=\frac{\pi}{2}$ y $x_{0}=5\pi$, como criterio de parada el mismo descrito en (a).
-	\begin{table} [H]
-			\centering
-			\begin{tabular}{|c|c|c|c|}
-				\hline
-				$x_{0}$& $x_{1}$ & Cero Obtenido & Iteraciones\\
-				\hline
-				$\frac{\pi}{2}$ & 1,7854 & 1,8955 & 24 \\
-				\hline 
-				$5\pi$& 13,0900 & 0 & 31\\
-				\hline
-			\end{tabular}
-		\end{table}
-		
-Se puede apreciar que si $x_{0}=5\pi$, al ocupar el método de la secantem se obtiene un cero distinto a cuando se ocupa el método de Newton.	
-	\end{enumerate}
+    	\begin{enumerate}
+    	\item  Usando el método de Newton con punto inicial $x_{0}=\frac{\pi}{2}$ encuentre la solución aproximada de $f$. Para ello Realize las iteraciones necesarias hasta que se cumpla el criterio de parada %$\abs{x_{n+1}-x_{n}} \l 10^{-6} $
+    
+    %pregunta 2
+    %pendiente: poner gráfica
+    \item Considere la ecuación no lineal $f(x)= \frac{1}{2}+\frac{1}{4}x^2-xsen(x)-\frac{1}{2}cos(2x)=0$
+        	\begin{enumerate}
+        	\item  Usando el método de Newton con punto inicial $x_{0}=\frac{\pi}{2}$ encuentre la solución aproximada de $f$. Para ello REalize las iteraciones necesarias hasta que se cumpla el criterio de parada %$\abs{x_{n+1}-x_{n}} \l 10^{-6} $
+        %pendiente: valor absoluto
+        
+        		\begin{table} [H]
+        			\centering
+        			\begin{tabular}{|c|c|c|}
+        				\hline
+        				$x_{0}$ & Cero Obtenido & Iteraciones\\
+        				\hline
+        				$\frac{\pi}{2} $ & 1,8955 & 18\\
+        				\hline 
+        			\end{tabular}
+        		\end{table}
+        	
+        	\item Repita el proceso tomando como valores iniciales $x_{0}=5\pi$ y $x_{0}=10\pi$ ¿La sucesión construída con estos puntos iniciales converge?
+        	 	\begin{table} [H]
+        			\centering
+        			\begin{tabular}{|c|c|c|}
+        				\hline
+        				$x_{0}$ & Cero Obtenido & Iteraciones\\
+        				\hline
+        				$5\pi$ & 1,8955 & 22 \\
+        				\hline 
+        				$10\pi$ & 0 & 66\\
+        				\hline
+        			\end{tabular}
+        		\end{table}
+        		
+        La sucesión, en el caso de $x_{0}=5\pi$, converge al mismo cero que en el ejercicio anterior. Por otra parte, cuando $x_{0}=10\pi$, esta converge a 0.
+        
+        	\item Use el método de la secante para encontrar la solución aproximada tomando como puntos iniciales $x_{0}=\frac{\pi}{2}$ y $x_{0}=5\pi$, como criterio de parada el mismo descrito en (a).
+        	\begin{table} [H]
+        			\centering
+        			\begin{tabular}{|c|c|c|c|}
+        				\hline
+        				$x_{0}$& $x_{1}$ & Cero Obtenido & Iteraciones\\
+        				\hline
+        				$\frac{\pi}{2}$ & 1,7854 & 1,8955 & 24 \\
+        				\hline 
+        				$5\pi$& 13,0900 & 0 & 31\\
+        				\hline
+        			\end{tabular}
+        		\end{table}
+        		
+        Se puede apreciar que si $x_{0}=5\pi$, al ocupar el método de la secantem se obtiene un cero distinto a cuando se ocupa el método de Newton.	
+        
+        \end{enumerate}
+        
+    \end{enumerate}
 		
 
 \item Considere la ecuación no lineal $f(x) = -x^{3} - \cos(x) = 0$
@@ -263,7 +263,7 @@ Se puede apreciar que si $x_{0}=5\pi$, al ocupar el método de la secantem se ob
         ¿Qué método converge más rápido?
         El método de Newton usual converge más rápido, ya que solo tomó 4 iteraciones %debo graficar y argumentar.
     \end{enumerate}
-\end{enumerate}
+
 \newpage
 \item El dinero necesario para pagar la cuota correspondiente a un crédito hipotecario a interés fijo se suele
 estimar mediante la denominada “ecuación de la anualidad ordinaria”:
@@ -280,15 +280,12 @@ calcule cual es el tipo máximo de interés al que pueden negociar su préstamo 
 Hint.- Usar método de Newton, tomando como punto inicial i0 = 0.03.
 Suponga ahora que desean endeudarse en 15 años en lugar de 10. Cual sería el interés en esta situación?
 
-\\
-\\
-\\
-\\
+
 Resp: Al realizar el método de Newton aplicandolo a optimización, se obtiene un interes de 10.24\%. Considerando un error de 5\% el porcentaje era excesivamente alto, es por ello que se realizarón iteraciones hasta observar que el valor no cambiaba, asi se encontro el valor en que converge a los 10 años del prestamo.
-\\
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=9cm]{1}
+    \includegraphics[width=12cm]{1}
 \end{figure}
 Suponga ahora que desean endeudarse en 15 a~nos en lugar de 10. Cual sera el interes en esta situacion?
 \\
@@ -296,9 +293,10 @@ Resp: 5.1\% . El proceso de su busqueda fue similar al anterior.
 \\
 \begin{figure}[H]
     \centering
-    \includegraphics[width=9cm]{3}
+    \includegraphics[width=12cm]{3}
 \end{figure}
 \newpage
+
 
 \item Considere la función \(f(x) = x*cos(x)-e^x+ 1\). % pregunta 5 
 \begin{enumerate}
@@ -312,10 +310,6 @@ Resp: 5.1\% . El proceso de su busqueda fue similar al anterior.
 {1 + cos(x)}
 \end{equation}
 \\
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=10cm]{fig_5a}
-\end{figure}
 \begin{itemize}
 \item x0=0.5
 \end{itemize}
@@ -399,10 +393,6 @@ Resp: 5.1\% . El proceso de su busqueda fue similar al anterior.
 {cos(x)}
 \end{equation}
 \\
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=9cm]{fig_5b}
-\end{figure}
 \begin{itemize}
 \item x0=0.5
 \end{itemize}
@@ -490,10 +480,6 @@ Resp: 5.1\% . El proceso de su busqueda fue similar al anterior.
 {f'(x)}
 \end{equation}
 \\
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=9cm]{5_g3_b}
-\end{figure}
  \begin{itemize}
 \item x0=0.5
 \end{itemize}
@@ -573,16 +559,11 @@ Resp: 5.1\% . El proceso de su busqueda fue similar al anterior.
         \end{tabular}
         
     \end{table}
- \vspace{2cm}
+ \newpage
      \begin{equation}
  g4(x) = x-2\frac{f(x)}
 {f'(x)}
 \end{equation}
-\newpage
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=9cm]{5_g4}
-\end{figure}
  \begin{itemize}
 \item x0=0.5
 \end{itemize}
@@ -661,18 +642,14 @@ Resp: 5.1\% . El proceso de su busqueda fue similar al anterior.
         \end{tabular}
         
     \end{table}
-    \vspace{3cm}
+    \newpage
     \begin{equation}
  g5(x) = x-\frac{f(x)f'(x)}
 {(f'(x))^2-f(x)f''(x)}
 \end{equation}
 \\
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=9cm]{g5}
-\end{figure}
  \begin{itemize}
- \newpage
+
 \item x0=0.5
 \end{itemize}
 \begin{table}[H]
@@ -745,12 +722,9 @@ Resp: 5.1\% . El proceso de su busqueda fue similar al anterior.
         \hline
         \end{tabular}
     \end{table}
-\vspace{3cm}
+\newpage
 \item Que puede decir sobre el comportamiento de las iteraciones de punto fijo calculadas anteriormente.
 \begin{itemize}
-
-\item De la función g1(x), cuando se toma el punto inicial x0=0.5, la iteración por punto fijo diverge, pues, cada vez que se hacen más iteraciones, el numero tendera a infinito, por lo tanto 0.5 no es punto fijo de g1(x).
-Por otra parte, al tomar en la misma función g1(x) el punto inicial x0=-0.5, al realizar más iteraciones este convergera a la solución, por lo tanto -0.5 si es punto fijo de g1(x).
 
 \item De la función g2(x), tanto para el punto inicial x0=0.5 como para x0=-0.5 desde determinada iteración la solución se volvio imaginaria, por lo tanto g2(x) al no ser una función continua no tiene puntos fijos.
 \item De la función g3(x),para el punto inicial x0=0.5 la función cada vez va convergiendo a la solución, por lo que 0.5 es punto fijo de g3(x).\\ Ahora para x0=-0.5 al igual que en el anterior punto fijo, este igual converge a la solución, declarandose así que -0.5 tambien es un punto fijo de g3(x).
@@ -760,10 +734,7 @@ Lo mismo sucedio con x0=-0.5 desde determinada iteración fue convergiendo hasta
 \end{itemize}
 
 \end{enumerate}
-<<<<<<< HEAD
-\item Según los metodos descritos(Nweton, Schröder y Whittaker) para encontrar la raíz aproximada de $f(x)=0$:
-=======
-\newpage
+
 \item Métodos iterativos :A continuación se describen algunos métodos de iteración de punto fijo que encuentran la raíz aproximada de f(x) = 0
 \begin{itemize}
         \item Método de Newton     
@@ -782,7 +753,6 @@ Lo mismo sucedio con x0=-0.5 desde determinada iteración fue convergiendo hasta
             \end{equation*}
         
 \end{itemize}
->>>>>>> 2d15196d83295c79463f3c1fbf4094e856e2e603
 	\begin{enumerate}
 	
 		\item Utilize los métodos para encontrar la solución de la ecuación no lineal $f(x)=0$, donde
@@ -839,19 +809,15 @@ Lo mismo sucedio con x0=-0.5 desde determinada iteración fue convergiendo hasta
 				\hline				
 			\end{tabular}
 		\end{table}		
-			
+\newpage			
 		\item Compare los errores relativos vs. las iteraciones (mediante un gráfico) para los métodos (descritos
 			anteriormente) que determinan la raíz de $f_{i}(x)=0$, para $i$ = 1,2,3.	
 			\begin{itemize}
 				\item Método de Newton:
 				\begin{figure}[H]
-					\centering
-<<<<<<< HEAD
-					\includegraphics[width=10cm]{NewtonEj6} 
-				\end{figure}								 
-				
-				
-				\item Métdo de Schröder: 
+					\centering		\includegraphics[width=10cm]{NewtonEj6} %hay que posicionar bien los gráficos
+				\end{figure}
+								\item Métdo de Schröder: 
 				 \begin{figure}[H]
 					\centering
 					\includegraphics[width=10cm]{SchroderEj6} 
@@ -860,14 +826,10 @@ Lo mismo sucedio con x0=-0.5 desde determinada iteración fue convergiendo hasta
 				 
 				 \item Método de Whittaker;
 				 \begin{figure}[H]
-					\centering
-					\includegraphics[width=10cm]{WhittakerEj6} 
+					\centering	\includegraphics[width=10cm]{WhittakerEj6} 
 				\end{figure}	
-			\end{itemize}				
-		
-	
+			\end{itemize}
         \end{enumerate}
->>>>>>> 2d15196d83295c79463f3c1fbf4094e856e2e603
 \end{enumerate}
 \newpage
 \section{Resolución de sistemas de ecuaciones no lineales:}
@@ -1001,8 +963,10 @@ Lo mismo sucedio con x0=-0.5 desde determinada iteración fue convergiendo hasta
     
     Para realizar este item se utilizo el código de NewtonVariables.m
     \end{enumerate}
-\section{Investigación}
+    \newpage
+    \section{Investigación}
     El método de Horner es utilizado como el paso previo para encontrar las raíces de una ecuación polinomial, es decir una función de la forma $$P(x)=a_{0}x^{n}+a_{1}x^{n-1}+...+a_{n-1}x+a_{n}$$
     Este algoritmo permite evaluar este tipo de ecuaciones con mayor rapidez que un método común, tomando $n$ multiplicaciones y $n$ sumas para evaluar un polinomio de grado n.
     %http://www.ehu.eus/~mepmufov/html/Parte2.pdf
+    
 \end{document}
