@@ -15,7 +15,7 @@
 
 \chapter{Introducción}
 
-En el siguiente se informe se mostrarán y analizarán los resultados de los ejercicios entregados por el profesor, utilizando los métodos vistos en clases. Además, se indagará acerca del método de horner, describiendo el algoritmo, dando un par de ejemplos y mostrando su código.
+En el siguiente se informe se mostrarán y analizarán los resultados de los ejercicios entregados por el profesor, utilizando los métodos vistos en clases, comprobando su efectividad para los distintos casos que se presentan. Además, se indagará acerca del método de horner, describiendo para que es utilizado el algoritmo, dando un ejemplo en el que es útil y mostrando su código.
 
 \chapter{Resolución de sistemas de ecuaciones no lineales:}
 \begin{enumerate}
@@ -974,7 +974,6 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
     \newpage
     \chapter{Investigación}
     El método de Horner es utilizado como el paso previo para encontrar las raíces de una ecuación polinomial, es decir una función de la forma $$P(x)=a_{0}x^{n}+a_{1}x^{n-1}+...+a_{n-1}x+a_{n}$$
-    Este algoritmo permite evaluar este tipo de ecuaciones con mayor rapidez que un método común, tomando $n$ multiplicaciones y $n$ sumas para evaluar un polinomio de grado n.
-    %http://www.ehu.eus/~mepmufov/html/Parte2.pdf
+    Este tipo de ecuaciones toman mucho tiempo en ser evaluadas con un método corriente (i.e. Newton) y es precisamente para eso que Horner es utilizado, ya que permite evaluar estas ecuaciones con mayor rapidez que un método común, tomando $n$ multiplicaciones y $n$ sumas para evaluar un polinomio de grado n. Y luego de haber sido evaluadas pueden pasar a ser procesadas por otro método para encontrar sus raices.
     
 \end{document}
