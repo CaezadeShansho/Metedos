@@ -40,7 +40,7 @@
 \chapter{Introducción}
 
 El presente informe mostrará y hará un detallado análisis de los resultados de los problemas en los cuales se basa este trabajo, utilizando los  diversos métodos vistos en cátedra, los cuales hacen principalmente referencia a las aproximaciones a la solución de alguna función, es por ello que para cada ítem será necesario un análisis exhaustivo, debido a que se tiene que ser capaz de discriminar que es lo que sucede con los métodos aplicados en distintas situaciones. Lo cual deriva a conceptos importantes como entender cuando una solución converge a la raíz, como también el caso contrario . Además de los procesos vistos en cátedra, se indagará acerca del método de Horner, describiendo para que es utilizado el algoritmo, dando un ejemplo en el que es útil y mostrando su código.
-\chapter{Resolución de sistemas de ecuaciones no lineales:}
+\chapter{Resolución de ecuaciones no lineales:}
 \begin{enumerate}
 \item Usando los métodos de bisección, falsa posición, y secante, encuentre la raíz aproximada 
 de las siguientes ecuaciones no lineales en los intervalos indicados:
@@ -59,6 +59,7 @@ de las siguientes ecuaciones no lineales en los intervalos indicados:
         \begin{figure}[H]
             \centering
             \includegraphics[width=9cm]{GraficoEj1a}
+             \caption{Gráfico Ej 1A}
         \end{figure}
         El objetivo es obtener el 0 de la función para resolver la ecuacion lineal, pero esta, como muestra el gráfico tiene 2 soluciones.Para lograr analizar completamente estos 2 casos con los 3 métodos diferentes se tienen que separar en 2 intervalos nuestro intervalo anterior, en este caso lo separaremos en [0,0.8] y [0.8,2]\\
             \begin{table}[H]Intervalo [0,0.8]:
@@ -97,6 +98,7 @@ de las siguientes ecuaciones no lineales en los intervalos indicados:
         \begin{figure}[H]
             \centering
             \includegraphics[width=8cm]{GraficoEj1b}
+            \caption{Gráfico Ej 1B}
         \end{figure}
         
         \begin{table}[H]
@@ -124,6 +126,7 @@ de las siguientes ecuaciones no lineales en los intervalos indicados:
         \begin{figure}[H]
             \centering
             \includegraphics[width=10cm]{GraficoEj1c}
+            \caption{Gráfico Ej 1C}
         \end{figure}
             \begin{table}[H]
             \centering
@@ -148,6 +151,7 @@ de las siguientes ecuaciones no lineales en los intervalos indicados:
         \begin{figure}[H]
         \centering
         \includegraphics[width=10cm]{GraficoEj1d}
+        \caption{Gráfico Ej 1D}
         \end{figure}
         \begin{table}[H]
         \centering
@@ -172,6 +176,7 @@ de las siguientes ecuaciones no lineales en los intervalos indicados:
         \begin{figure}[H]
         \centering
         \includegraphics[width=11cm]{GraficoEj1e}
+        \caption{Gráfico Ej 1E}
         \end{figure}
     
         \begin{table}[H]
@@ -870,6 +875,7 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
         \begin{center}
             $ \frac{|| x^{n+1} - x^{n} ||}{|| x^{n+1} ||} \leq 10^{-6} $  
         \end{center}
+        
 
         Donde $||z||=\sqrt{z_{1}^{2} + z_{2}^2+...+z_{n}^{2}} , z \in \mathbb{R}^{n}$
     \begin{enumerate}   
@@ -905,12 +911,14 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
             \begin{figure}[h]
                 \centering
                 \includegraphics[width=15cm]{GraficoEcEj1a}
+                 \caption{Gráfico Ecuación Ej1A}
             \end{figure}
             
             Como se observa en el grafico las rectas (1) y (2) se intersectan 2 veces, mientras que luego tienden a alejarse una de la otra. \\Analizaremos las 2 soluciones que existen dentro de este intervalo de gráfica mostrado anteriormente. Luego, realizando un zoom en donde se encuentran las intersecciones, se obtiene lo siguiente.\\
             
             \begin{figure}[H]
                \centering   \includegraphics[width=13cm]{GraficoEcEj1azoom}
+                \caption{Gráfico Ecuación Ej 1A con acercamiento}
             \end{figure}
             Ahora, para lograr obtener nuesta solución que se encuentra en el 2do cuadrante, ocuparemos un punto cercano a la interseccion. En este caso ocuparemos $ x0=[-2;1] $ y el resulado obtenido como primera solución de la ecuación es:
             $ x*=[-1.6088;1.1686 ]$ siendo el punto  $x = -1.6088$,$y = 1.1686$
@@ -927,6 +935,7 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
             
             \begin{figure}[h] \centering
             \includegraphics[width=12cm]{GraficoEcEj1b}
+             \caption{Gráfico Ecuación Ej 1B}
             \end{figure}
         Como se observa en la figura existen 2 soluciones del sistema no lineal, gracias a la gráfica dibujada dividiremos el problema en 2 casos, ocuparemos puntos cercanos a la intersección de las curvas dibujadas y asumiremos gracias a esta que no se intersectan en otro punto ya que  $ x \in (-inf,-2) \cup (1,inf+)$ las imagenes de las funciones se alejan.
         
@@ -952,6 +961,7 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
     \begin{figure}[H]
     \centering
     \includegraphics[width=7cm]{imagenEjec}
+    \caption{Sistema de flujos}
     \end{figure}        
     
     Para un determinado fluido se sabe que
@@ -998,7 +1008,7 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
     \chapter{Investigación}
     El método de Horner es utilizado como el paso previo para encontrar las raíces de una ecuación polinomial, es decir una función de la forma $$P(x)=a_{0}x^{n}+a_{1}x^{n-1}+...+a_{n-1}x+a_{n}$$
     Este algoritmo permite evaluar este tipo de ecuaciones con mayor rapidez que un método común, tomando $n$ multiplicaciones y $n$ sumas para evaluar un polinomio de grado n.
-    A continuación se presenta el algoritmo utilizado para ejecutar este método:\\
+   A continuación se presenta el algoritmo utilizado para ejecutar este método:\\
     \begin{lstlisting}
 	% n : Grado del polinomio.
 	% coeff : Vector que contiene todas las constantes que acompañan a x.
