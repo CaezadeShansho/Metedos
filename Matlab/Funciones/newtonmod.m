@@ -1,3 +1,15 @@
+% Parámetros de Entrada :
+%
+% fnc : Tiene que ser una función evaluada como inline
+% x0 : Punto de partida
+% er : Tolerancia o error al cual quiere someterse
+%
+% Variables de Salida:
+%
+% nt : Valor aproximado del cero de la función
+%
+
+
 function nt = newtonmod(fnc,x0,er)
  dfun=diff(fnc);
  f=subs(fnc,x0);
