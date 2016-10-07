@@ -15,8 +15,7 @@
 
 \chapter{Introducción}
 
-En el siguiente se informe se mostrarán y analizarán los resultados de los ejercicios entregados por el profesor, utilizando los métodos vistos en clases, comprobando su efectividad para los distintos casos que se presentan. Además, se indagará acerca del método de horner, describiendo para que es utilizado el algoritmo, dando un ejemplo en el que es útil y mostrando su código.
-
+El presente trabajo mostrará y  hará un detallado análisis de los resultados de problemas en los cuales se basa este trabajo, utilizando los  diversos métodos vistos en catedra, los cuales hacen principalmente referencia a las aproximaciones a una solución de funciones, es por ello que para cada ítem sea necesario un análisis exhaustivo debido a que se tiene que  capaz de discriminar que es lo que sucede con los métodos aplicados en distintas situaciones, lo cual deriva a conceptos importantes como entender cuando una solución converge a la solución, como también el caso contrario . Además de los procesos vistos en catedra, se indagará acerca del método de Horner, describiendo el algoritmo, dando un par de ejemplos y mostrando su código.
 \chapter{Resolución de sistemas de ecuaciones no lineales:}
 \begin{enumerate}
 \item Usando los métodos de bisección, falsa posición, y secante, encuentre la raíz aproximada 
@@ -974,6 +973,12 @@ Lo mismo sucedió con x0=-0.5 desde determinada iteración fue convergiendo hast
     \newpage
     \chapter{Investigación}
     El método de Horner es utilizado como el paso previo para encontrar las raíces de una ecuación polinomial, es decir una función de la forma $$P(x)=a_{0}x^{n}+a_{1}x^{n-1}+...+a_{n-1}x+a_{n}$$
-    Este tipo de ecuaciones toman mucho tiempo en ser evaluadas con un método corriente (i.e. Newton) y es precisamente para eso que Horner es utilizado, ya que permite evaluar estas ecuaciones con mayor rapidez que un método común, tomando $n$ multiplicaciones y $n$ sumas para evaluar un polinomio de grado n. Y luego de haber sido evaluadas pueden pasar a ser procesadas por otro método para encontrar sus raices.
+    Este algoritmo permite evaluar este tipo de ecuaciones con mayor rapidez que un método común, tomando $n$ multiplicaciones y $n$ sumas para evaluar un polinomio de grado n.
+    %http://www.ehu.eus/~mepmufov/html/Parte2.pdf\chapter{Introducción}
     
+    \chapter{Conclusión}
+      Del trabajo realizado se concluye lo siguiente, para el uso de ecuaciones no lineales, junto con esto los métodos que fueron       aplicados para cada ítem, se logra  una amplia comprensión de como es el funcionamiento de cada uno de estos procesos para los casos a los cuales se aplicaron, esto quiere decir que se observó el comportamiento de la función en cada método, casos como el del punto fijo, secante y newton en donde la toma del punto inicial fue fundamental para ver si el método que aplicamos era el correcto, así se determinó que para este tipo de casos existía una convergencia local, ya que la dependencia de este punto era vital para que existiera convergencia. 
+\\
+En general, la aplicación de estos métodos se hicieron con el fin de aproximarse cada vez más a la solución, es por ello que se realizaban múltiples iteraciones para la mayoría de los casos y observando en todo momento su comportamiento. Finalmente, la realización del trabajo es fundamental para comprender de manera practica la teoría de los métodos de aproximación. 
+
 \end{document}
