@@ -6,7 +6,7 @@
 %
 % Variables de salida:
 % c: cantidad de iteraciones
-$ sf: Valor aproximado del cero de la función
+% sf: Valor aproximado del cero de la función
 
 
 

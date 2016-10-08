@@ -1,12 +1,12 @@
 
 % Parametros de entrada:
-%
-% f : Vector de funciones escritas con variables simbólicas
+% utiliza el archivo mifuncion.m
+% f : Vector de funciones escritas con variables simbÃ³licas
 % x0 : Vector de intervalos (debe ser congruente con el vector f)
 %
 % Variables de salida : 
 % 
-% sol : Vector solución aproximado por la función
+% sol : Vector soluciÃ³n aproximado por la funciÃ³n
 % i : Iteraciones realizadas
 %
 function [sol,i]=NewtonVariables(f,x0)

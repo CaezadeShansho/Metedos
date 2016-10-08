@@ -6,7 +6,7 @@
 %
 % Variables de salida:
 % c: cantidad de iteraciones
-$ nt: Valor aproximado del cero de la función
+% nt: Valor aproximado del cero de la función
 
 
 
