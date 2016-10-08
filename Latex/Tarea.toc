@@ -1,0 +1,6 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{3}
+\contentsline {chapter}{\numberline {2}Resoluci\IeC {\'o}n de ecuaciones no lineales:}{4}
+\contentsline {chapter}{\numberline {3}Resoluci\IeC {\'o}n de sistemas de ecuaciones no lineales:}{19}
+\contentsline {chapter}{\numberline {4}Investigaci\IeC {\'o}n}{24}
+\contentsline {chapter}{\numberline {5}Conclusi\IeC {\'o}n}{25}
